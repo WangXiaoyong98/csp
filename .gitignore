@@ -1,0 +1,46 @@
+# nodejs
+node_modules
+dist
+yarn.lock
+package-lock.json
+
+# electron
+dist-electron
+release
+
+# vue
+src/components.d.ts
+src/typed-router.d.ts
+
+# vscode
+.vscode/*
+
+# python
+__pycache__
+
+#project
+csplink.config
+repository
+repository.index
+*.log
+
+# csplink
+resources/contributors
+resources/repository
+resources/packages
+resources/database/schema/*.json
+resources/database/**/*.xml
+resources/server
+
+# build
+build
+build-*
+
+# drawio
+*.bkp
+
+# .vitepress
+docs/.vitepress/cache
+
+# ai
+CLAUDE.md

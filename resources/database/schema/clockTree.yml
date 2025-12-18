@@ -1,0 +1,113 @@
+# Licensed under the Apache License v. 2 (the "License")
+# You may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0.html
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# Copyright (C) 2025-2025 xqyjlj<xqyjlj@126.com>
+#
+# @author      xqyjlj
+# @file        clockTree.yml
+#
+# Change Logs:
+# Date           Author       Notes
+# ------------   ----------   -----------------------------------------------
+# 2025-10-05     xqyjlj       initial version
+# 2025-10-12     xqyjlj       complete schema based on clockTree.d.ts
+#
+
+$schema: "http://json-schema.org/draft-07/schema#"
+description: "Clock Tree configuration schema"
+type: object
+additionalProperties: false
+properties:
+  instance:
+    type: string
+    description: "The instance identifier for the clock tree"
+  edges:
+    type: object
+    additionalProperties: false
+    description: "Collection of edges in the clock tree"
+    patternProperties:
+      ".*":
+        $ref: "#/definitions/$edge$"
+  nodes:
+    type: object
+    additionalProperties: false
+    description: "Collection of nodes in the clock tree"
+    patternProperties:
+      ".*":
+        $ref: "#/definitions/$node$"
+required: [instance, edges, nodes]
+definitions:
+  $edge$:
+    type: object
+    required:
+      - type
+      - source
+      - target
+    properties:
+      type:
+        type: string
+        enum:
+          - "ct-smoothstep"
+          - "ct-cliff"
+        description: "Type of edge connection"
+      source:
+        type: string
+        description: "Source node identifier"
+      target:
+        type: string
+        description: "Target node identifier"
+      sourceHandle:
+        type: string
+        description: "Source handle identifier"
+      targetHandle:
+        type: string
+        description: "Target handle identifier"
+      label:
+        type: string
+        description: "Optional edge label"
+    additionalProperties: false
+  $node$:
+    type: object
+    required:
+      - type
+    properties:
+      type:
+        type: string
+        enum:
+          - "ct-input-number"
+          - "ct-output"
+          - "ct-select"
+          - "ct-radio"
+          - "ct-probe"
+          - "ct-number-label"
+        description: "Type of node component"
+      position:
+        type: object
+        required:
+          - x
+          - y
+        properties:
+          x:
+            type: number
+            description: "X coordinate position"
+          y:
+            type: number
+            description: "Y coordinate position"
+        additionalProperties: false
+      unit:
+        type: string
+        enum:
+          - "U"
+          - "K"
+          - "M"
+        description: "Unit for node values"
+    additionalProperties: false

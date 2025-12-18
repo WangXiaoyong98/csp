@@ -1,0 +1,1928 @@
+name: APM32F103ZET6
+clockTree: APM32F103
+core: ARM Cortex-M3
+frequency: 96
+io: 112
+series: APM32F1
+line: APM32F103
+vendor: Geehy
+vendorUrl:
+  en: https://global.geehy.com
+  zh-cn: https://geehy.com
+documents:
+  datasheets:
+    APM32F103xDxE数据手册:
+      url:
+        en: https://geehy.com/uploads/tool/APM32F103xDxE数据手册 V2.2.pdf
+        zh-cn: https://geehy.com/uploads/tool/APM32F103xDxE数据手册 V2.2.pdf
+      type: pdf
+      size: 2.77 MB
+      version: "2.2"
+  references:
+    APM32F103xCxDxE用户手册:
+      url:
+        en: https://geehy.com/uploads/tool/APM32F103xCxDxE用户手册 V1.8.pdf
+        zh-cn: https://geehy.com/uploads/tool/APM32F103xCxDxE用户手册 V1.8.pdf
+      type: pdf
+      size: 8.86 MB
+      version: "1.8"
+  applications:
+    AN1103_APM32F103 软件模拟SPI读写外部Flash:
+      url:
+        en: https://geehy.com/uploads/tool/AN1103_APM32F103 软件模拟SPI读写外部Flash_V1.0.pdf
+        zh-cn: https://geehy.com/uploads/tool/AN1103_APM32F103 软件模拟SPI读写外部Flash_V1.0.pdf
+      type: pdf
+      size: 1.22 MB
+      version: "1.0"
+    AN1102_APM32F103 软件I2C读写EEPROM:
+      url:
+        en: https://geehy.com/uploads/tool/AN1102_APM32F103 软件I2C读写EEPROM_V1.0.pdf
+        zh-cn: https://geehy.com/uploads/tool/AN1102_APM32F103 软件I2C读写EEPROM_V1.0.pdf
+      type: pdf
+      size: 838.98 KB
+      version: "1.0"
+    AN1111_APM32F103xB硬件开发指南:
+      url:
+        en: https://geehy.com/uploads/tool/AN1111_APM32F103xB硬件开发指南V1.0.pdf
+        zh-cn: https://geehy.com/uploads/tool/AN1111_APM32F103xB硬件开发指南V1.0.pdf
+      type: pdf
+      size: 1.1 MB
+      version: "1.0"
+    AN1153_APM32F103xC应用注意事项:
+      url:
+        en: https://geehy.com/uploads/tool/AN1153_APM32F103xC应用注意事项 V1.0.pdf
+        zh-cn: https://geehy.com/uploads/tool/AN1153_APM32F103xC应用注意事项 V1.0.pdf
+      type: pdf
+      size: 954.39 KB
+      version: "1.0"
+    AN1154_APM32F103xE_USB强制挂起:
+      url:
+        en: https://geehy.com/uploads/tool/AN1154_APM32F103xE_USB强制挂起_V1.0.pdf
+        zh-cn: https://geehy.com/uploads/tool/AN1154_APM32F103xE_USB强制挂起_V1.0.pdf
+      type: pdf
+      size: 731.52 KB
+      version: "1.0"
+  faqs:
+    APM32F103XC_主频&晶振_LCD液晶显示屏初始化出现卡顿和乱码:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220303_APM32F103XC_主频&晶振_LCD液晶显示屏初始化出现卡顿和乱码.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220303_APM32F103XC_主频&晶振_LCD液晶显示屏初始化出现卡顿和乱码.pdf
+      type: pdf
+      size: 664.62 KB
+      version: "1.0"
+    APM32F103XE_I2C_加入六轴传感器后，I2C通讯EEPROM会挂死:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220306_APM32F103XE_I2C_加入六轴传感器后，I2C通讯EEPROM会挂死.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220306_APM32F103XE_I2C_加入六轴传感器后，I2C通讯EEPROM会挂死.pdf
+      type: pdf
+      size: 581.14 KB
+      version: "1.0"
+    APM32F103XC_TMR_关闭DMA进入睡眠模式出现故障:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220308_APM32F103XC_TMR_关闭DMA进入睡眠模式出现故障.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220308_APM32F103XC_TMR_关闭DMA进入睡眠模式出现故障.pdf
+      type: pdf
+      size: 530.91 KB
+      version: "1.0"
+    APM32F103C8T6_TMR1_TMR1输出异常:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220505_APM32F103C8T6_TMR1_TMR1输出异常.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220505_APM32F103C8T6_TMR1_TMR1输出异常.pdf
+      type: pdf
+      size: 514.34 KB
+      version: "1.0"
+    APM32F103VCT6_Flash_72MHz时开机会异常重启:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220509_APM32F103VCT6_Flash_72MHz时开机会异常重启.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220509_APM32F103VCT6_Flash_72MHz时开机会异常重启.pdf
+      type: pdf
+      size: 158.69 KB
+      version: "1.0"
+    APM32F103RCT6_Flash_擦写失败:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220511_APM32F103RCT6_Flash_擦写失败.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220511_APM32F103RCT6_Flash_擦写失败.pdf
+      type: pdf
+      size: 162.08 KB
+      version: "1.0"
+    APM32F103VBT6_BOOT引脚_低温下开机不工作:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220512_APM32F103VBT6_BOOT引脚_低温下开机不工作.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220512_APM32F103VBT6_BOOT引脚_低温下开机不工作.pdf
+      type: pdf
+      size: 162.41 KB
+      version: "1.0"
+    APM32F103VCT6_GPIO_未使用的IO如何配置:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220514_APM32F103VCT6_GPIO_未使用的IO如何配置.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220514_APM32F103VCT6_GPIO_未使用的IO如何配置.pdf
+      type: pdf
+      size: 495.77 KB
+      version: "1.0"
+    APM32F103RCT6_UART_串口多层并发导致死机:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220516_APM32F103RCT6_UART_串口多层并发导致死机.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220516_APM32F103RCT6_UART_串口多层并发导致死机.pdf
+      type: pdf
+      size: 162.69 KB
+      version: "1.0"
+    APM32F103RCT6_管脚_Vref+对应哪个管脚:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220519_APM32F103RCT6_管脚_Vref+对应哪个管脚.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220519_APM32F103RCT6_管脚_Vref+对应哪个管脚.pdf
+      type: pdf
+      size: 158.04 KB
+      version: "1.0"
+    APM32F103RCT6_CAN_CAN无法进入中断:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220520_APM32F103RCT6_CAN_CAN无法进入中断.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220520_APM32F103RCT6_CAN_CAN无法进入中断.pdf
+      type: pdf
+      size: 160.33 KB
+      version: "1.0"
+    APM32F103VBT6_电源上电后，芯片不启动:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220703_APM32F103VBT6_电源上电后，芯片不启动.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220703_APM32F103VBT6_电源上电后，芯片不启动.pdf
+      type: pdf
+      size: 506.14 KB
+      version: "1.0"
+    APM32F103C8T6_RCM_休眠唤醒后，灯概率性闪烁异常:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220705_APM32F103C8T6_RCM_休眠唤醒后，灯概率性闪烁异常.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220705_APM32F103C8T6_RCM_休眠唤醒后，灯概率性闪烁异常.pdf
+      type: pdf
+      size: 520.31 KB
+      version: "1.0"
+    APM32F103ZET6_UID_只通过UID后32位能否辨别芯片:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220709_APM32F103ZET6_UID_只通过UID后32位能否辨别芯片.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220709_APM32F103ZET6_UID_只通过UID后32位能否辨别芯片.pdf
+      type: pdf
+      size: 507.85 KB
+      version: "1.0"
+    APM32F103VCT6_ESD_输出10KV高压脉冲时，MCU会复位:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220712_APM32F103VCT6_ESD_输出10KV高压脉冲时，MCU会复位.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220712_APM32F103VCT6_ESD_输出10KV高压脉冲时，MCU会复位.pdf
+      type: pdf
+      size: 503.87 KB
+      version: "1.0"
+    APM32F103CBT6_启动问题_无法正常启动:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220719_APM32F103CBT6_启动问题_无法正常启动.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220719_APM32F103CBT6_启动问题_无法正常启动.pdf
+      type: pdf
+      size: 516.61 KB
+      version: "1.0"
+    APM32F103RCT6_IO引脚_老化测试时应注意引脚结构类型:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220722_APM32F103RCT6_IO引脚_老化测试时应注意引脚结构类型.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220722_APM32F103RCT6_IO引脚_老化测试时应注意引脚结构类型.pdf
+      type: pdf
+      size: 519.3 KB
+      version: "1.0"
+    APM32F103VCT6_低功耗问题_STOP模式下的功耗异常偏高:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220907_APM32F103VCT6_低功耗问题_STOP模式下的功耗异常偏高.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220907_APM32F103VCT6_低功耗问题_STOP模式下的功耗异常偏高.pdf
+      type: pdf
+      size: 507.96 KB
+      version: "1.0"
+    APM32F103RCT6_硬件问题_示波器抓取PWM波形异常:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220913_APM32F103RCT6_硬件问题_示波器抓取PWM波形异常.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220913_APM32F103RCT6_硬件问题_示波器抓取PWM波形异常.pdf
+      type: pdf
+      size: 504.63 KB
+      version: "1.0"
+    APM32F103RCT7_CAN_CAN2无法通信:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220918_APM32F103RCT7_CAN_CAN2无法通信.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220918_APM32F103RCT7_CAN_CAN2无法通信.pdf
+      type: pdf
+      size: 498.38 KB
+      version: "1.0"
+    APM32F103VCT6S_USB_MAC电脑无法识别USB设备:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220926_APM32F103VCT6S_USB_MAC电脑无法识别USB设备.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220926_APM32F103VCT6S_USB_MAC电脑无法识别USB设备.pdf
+      type: pdf
+      size: 530.95 KB
+      version: "1.0"
+    APM32F103RCT6_IO端口_复位脚持续拉低时PB4持续输出高电平:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220927_APM32F103RCT6_IO端口_复位脚持续拉低时PB4持续输出高电平.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220927_APM32F103RCT6_IO端口_复位脚持续拉低时PB4持续输出高电平.pdf
+      type: pdf
+      size: 509.49 KB
+      version: "1.0"
+    APM32F103RCT6_晶振问题_使用LSE晶振时RTC无法正常工作:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220928_APM32F103RCT6_晶振问题_使用LSE晶振时RTC无法正常工作.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220928_APM32F103RCT6_晶振问题_使用LSE晶振时RTC无法正常工作.pdf
+      type: pdf
+      size: 508.93 KB
+      version: "1.0"
+    APM32F103RCT6_CAN_CAN2输出异常:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220931_APM32F103RCT6_CAN_CAN2输出异常.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220931_APM32F103RCT6_CAN_CAN2输出异常.pdf
+      type: pdf
+      size: 511.34 KB
+      version: "1.0"
+    APM32F103RBT6_RTC模块_MCU休眠期间RTC每小时误差2分钟:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220932_APM32F103RBT6_RTC模块_MCU休眠期间RTC每小时误差2分钟.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220932_APM32F103RBT6_RTC模块_MCU休眠期间RTC每小时误差2分钟.pdf
+      type: pdf
+      size: 519.76 KB
+      version: "1.0"
+    APM32F103RCT6_CAN_CAN通信丢包:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220933_APM32F103RCT6_CAN_CAN通信丢包.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220933_APM32F103RCT6_CAN_CAN通信丢包.pdf
+      type: pdf
+      size: 500.03 KB
+      version: "1.0"
+    APM32F103CBT6_Flash_某一帧数据写失败:
+      url:
+        en: https://geehy.com/uploads/tool/FAQ20220943_APM32F103CBT6_Flash_某一帧数据写失败.pdf
+        zh-cn: https://geehy.com/uploads/tool/FAQ20220943_APM32F103CBT6_Flash_某一帧数据写失败.pdf
+      type: pdf
+      size: 505.9 KB
+      version: "1.0"
+  errata:
+    APM32F103xE 勘误手册:
+      url:
+        en: https://geehy.com/uploads/tool/APM32F103xE 勘误手册 V2.1.pdf
+        zh-cn: https://geehy.com/uploads/tool/APM32F103xE 勘误手册 V2.1.pdf
+      type: pdf
+      size: 591.22 KB
+      version: "2.1"
+hals: [csp_hal_apm32f1]
+hasPowerPad: false
+illustrate:
+  en: |
+    The **APM32F103xDxE** series MCU is based on the **32-bit Arm® Cortex®-M3 core**,
+    with a maximum operating frequency of **96 MHz** and built-in **FPU (Floating Point Unit)**
+    for efficient arithmetic operations.
+
+    ### Key Features
+    - **High-performance core**: 32-bit Arm® Cortex®-M3, up to 96 MHz
+    - **Hardware acceleration**: Supports **FPU** for floating-point calculations
+    - **Enhanced peripherals**:
+      - **EMMC controller** for external memory expansion
+      - **USB and CAN** can be used simultaneously
+    - **On-chip resources**: Integrated memory, timers, ADC/DAC
+    - **System advantages**: Low power consumption, large capacity, portability,
+      and fast Flash erase/program speed
+
+    ### Certifications
+    - **IEC 61508 SIL2** functional safety certified (China)
+    - **USB-IF** compliance test passed
+    - Meets **industrial-grade reliability standards**
+
+    ### Application Scenarios
+    - Model aircraft
+    - Handheld gimbals
+    - Barcode scanners
+    - Alarms and smart locks
+    - Electronic scales
+    - Industrial and IoT devices requiring performance and reliability
+
+    ---
+
+    With its **high performance and reliability**, the APM32F103xDxE series MCU
+    is an ideal choice for industrial control, consumer electronics, and IoT applications.
+
+  zh-cn: |
+    **APM32F103xDxE** 系列 MCU 基于 **32 位 Arm® Cortex®-M3 内核**，最高工作主频可达 **96 MHz**，并内置 **FPU 浮点运算单元**，在性能与能效之间实现良好平衡。
+
+    ### 主要特性
+    - **高性能内核**：32 位 Arm® Cortex®-M3，主频 96 MHz
+    - **硬件加速**：支持 **FPU 浮点运算单元**
+    - **增强型外设**：
+      - **EMMC 控制器**，便于外部存储扩展
+      - **USB 与 CAN 接口** 可同时使用
+    - **片上资源丰富**：集成存储器、定时器、ADC/DAC
+    - **优秀的系统特性**：功耗低、容量大、可移植性好、Flash 擦除/编程速度快
+
+    ### 认证与标准
+    - 已通过 **中国 IEC 61508 SIL2 功能安全认证**
+    - 已通过 **USB-IF 测试**
+    - 符合 **工业级高可靠性标准**
+
+    ### 典型应用领域
+    - 航模飞机
+    - 手持云台
+    - 扫码枪
+    - 报警器、密码锁
+    - 电子秤
+    - 其他工业与消费类应用
+
+    ---
+
+    凭借其 **高性能与高可靠性**，**APM32F103xDxE 系列 MCU** 是工业控制、消费电子和物联网应用的理想选择。
+introduction:
+  en: "A mainstream Arm Cortex-M3 value-line MCU featuring a 96 MHz CPU and 512 KB Flash"
+  zh-cn: 具有 512KB Flash和 96MHz CPU的主流 Arm Cortex-M3 超值系列 MCU
+modules:
+  peripherals:
+    CPU:
+      children:
+        Cortex-M3: {}
+        NVIC: {}
+    System:
+      children:
+        SYS:
+          define: apm32f103_sys
+        DMA: {}
+        GPIO:
+          define: apm32f103_gpio
+        RCM:
+          define: apm32f103_rcm
+    Watch Dog:
+      children:
+        IWDT:
+          define: apm32f103_iwdt
+        WWDT:
+          define: apm32f103_wwdt
+    Analog:
+      children:
+        ADC1: {}
+        ADC2: {}
+        ADC3: {}
+        DAC: {}
+    Timers:
+      children:
+        RTC: {}
+        TMR1: {}
+        TMR2: {}
+        TMR3: {}
+        TMR4: {}
+        TMR5: {}
+        TMR6: {}
+        TMR7: {}
+        TMR8: {}
+    Connectivity:
+      children:
+        CAN: {}
+        EMMC: {}
+        I2C1: {}
+        I2C2: {}
+        SDIO: {}
+        SPI1: {}
+        SPI2: {}
+        SPI3: {}
+        USART1:
+          define: apm32f103_usart
+        USART2:
+          define: apm32f103_usart
+        USART3:
+          define: apm32f103_usart
+        UART4:
+          define: apm32f103_uart
+        UART5:
+          define: apm32f103_uart
+        USBD: {}
+    Multimedia:
+      children:
+        I2S2: {}
+        I2S3: {}
+    Computing:
+      children:
+        CRC:
+          define: apm32f103_crc
+  middlewares: {}
+package: LQFP144
+url:
+  en: https://global.geehy.com/product/fifth/APM32F103
+  zh-cn: https://geehy.com/product/fifth/APM32F103
+builders:
+  XMake:
+    v2.8.1: [gcc-arm-none-eabi]
+  CMake:
+    v3.7: [gcc-arm-none-eabi]
+  MDK-Arm:
+    v5.27: [default]
+linker:
+  defaultHeapSize: "0x200"
+  defaultStackSize: "0x400"
+pins:
+  PE2:
+    position: 1
+    type: I/O
+    signals:
+      - FSMC:A23
+      - SYS:TRACECLK
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE3:
+    position: 2
+    type: I/O
+    signals:
+      - FSMC:A19
+      - SYS:TRACED0
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE4:
+    position: 3
+    type: I/O
+    signals:
+      - FSMC:A20
+      - SYS:TRACED1
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE5:
+    position: 4
+    type: I/O
+    signals:
+      - FSMC:A21
+      - SYS:TRACED2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE6:
+    position: 5
+    type: I/O
+    signals:
+      - FSMC:A22
+      - SYS:TRACED3
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  VBAT:
+    position: 6
+    type: power
+  PC13:
+    position: 7
+    type: I/O
+    signals:
+      - RTC:OUT
+      - RTC:TAMPER
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC14:
+    position: 8
+    type: I/O
+    signals:
+      - RCM:OSC32-IN
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC15:
+    position: 9
+    type: I/O
+    signals:
+      - ADC1:EXTI15
+      - ADC2:EXTI15
+      - RCM:OSC32-OUT
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PF0:
+    position: 10
+    type: I/O
+    signals:
+      - FSMC:A0
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF1:
+    position: 11
+    type: I/O
+    signals:
+      - FSMC:A1
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF2:
+    position: 12
+    type: I/O
+    signals:
+      - FSMC:A2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF3:
+    position: 13
+    type: I/O
+    signals:
+      - FSMC:A3
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF4:
+    position: 14
+    type: I/O
+    signals:
+      - FSMC:A4
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF5:
+    position: 15
+    type: I/O
+    signals:
+      - FSMC:A5
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  VSS-5:
+    position: 16
+    type: power
+  VDD-5:
+    position: 17
+    type: power
+  PF6:
+    position: 18
+    type: I/O
+    signals:
+      - ADC3:IN4
+      - FSMC:NIORD
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF7:
+    position: 19
+    type: I/O
+    signals:
+      - ADC3:IN5
+      - FSMC:NREG
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF8:
+    position: 20
+    type: I/O
+    signals:
+      - ADC3:IN6
+      - FSMC:NIOWR
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF9:
+    position: 21
+    type: I/O
+    signals:
+      - ADC3:IN7
+      - DAC:EXTI9
+      - FSMC:CD
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF10:
+    position: 22
+    type: I/O
+    signals:
+      - ADC3:IN8
+      - FSMC:INTR
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  RCM-OSC-IN:
+    position: 23
+    type: I/O
+    signals:
+      - RCM:OSC-IN
+  RCM-OSC-OUT:
+    position: 24
+    type: I/O
+    signals:
+      - RCM:OSC-OUT
+  NRST:
+    position: 25
+    type: reset
+  PC0:
+    position: 26
+    type: I/O
+    signals:
+      - ADC1:IN10
+      - ADC2:IN10
+      - ADC3:IN10
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC1:
+    position: 27
+    type: I/O
+    signals:
+      - ADC1:IN11
+      - ADC2:IN11
+      - ADC3:IN11
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC2:
+    position: 28
+    type: I/O
+    signals:
+      - ADC1:IN12
+      - ADC2:IN12
+      - ADC3:IN12
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC3:
+    position: 29
+    type: I/O
+    signals:
+      - ADC1:IN13
+      - ADC2:IN13
+      - ADC3:IN13
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  VSSA:
+    position: 30
+    type: power
+  VREF-:
+    position: 31
+    type: power
+  VREF+:
+    position: 32
+    type: power
+  VDDA:
+    position: 33
+    type: power
+  PA0:
+    position: 34
+    type: I/O
+    signals:
+      - ADC1:IN0
+      - ADC2:IN0
+      - ADC3:IN0
+      - SYS:WKUP
+      - TMR2:CH1
+      - TMR2:ETR
+      - TMR5:CH1
+      - TMR8:ETR
+      - USART2:CTS
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA1:
+    position: 35
+    type: I/O
+    signals:
+      - ADC1:IN1
+      - ADC2:IN1
+      - ADC3:IN1
+      - TMR2:CH2
+      - TMR5:CH2
+      - USART2:RTS
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA2:
+    position: 36
+    type: I/O
+    signals:
+      - ADC1:IN2
+      - ADC2:IN2
+      - ADC3:IN2
+      - TMR2:CH3
+      - TMR5:CH3
+      - USART2:TX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA3:
+    position: 37
+    type: I/O
+    signals:
+      - ADC1:IN3
+      - ADC2:IN3
+      - ADC3:IN3
+      - TMR2:CH4
+      - TMR5:CH4
+      - USART2:RX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  VSS-4:
+    position: 38
+    type: power
+  VDD-4:
+    position: 39
+    type: power
+  PA4:
+    position: 40
+    type: I/O
+    signals:
+      - ADC1:IN4
+      - ADC2:IN4
+      - DAC:OUT1
+      - SPI1:NSS
+      - USART2:CK
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA5:
+    position: 41
+    type: I/O
+    signals:
+      - ADC1:IN5
+      - ADC2:IN5
+      - DAC:OUT2
+      - SPI1:SCK
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA6:
+    position: 42
+    type: I/O
+    signals:
+      - ADC1:IN6
+      - ADC2:IN6
+      - SPI1:MISO
+      - TMR1:BKIN
+      - TMR3:CH1
+      - TMR8:BKIN
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA7:
+    position: 43
+    type: I/O
+    signals:
+      - ADC1:IN7
+      - ADC2:IN7
+      - SPI1:MOSI
+      - TMR1:CH1N
+      - TMR3:CH2
+      - TMR8:CH1N
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC4:
+    position: 44
+    type: I/O
+    signals:
+      - ADC1:IN14
+      - ADC2:IN14
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC5:
+    position: 45
+    type: I/O
+    signals:
+      - ADC1:IN15
+      - ADC2:IN15
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB0:
+    position: 46
+    type: I/O
+    signals:
+      - ADC1:IN8
+      - ADC2:IN8
+      - TMR1:CH2N
+      - TMR3:CH3
+      - TMR8:CH2N
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB1:
+    position: 47
+    type: I/O
+    signals:
+      - ADC1:IN9
+      - ADC2:IN9
+      - TMR1:CH3N
+      - TMR3:CH4
+      - TMR8:CH3N
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB2:
+    position: 48
+    type: I/O
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PF11:
+    position: 49
+    type: I/O
+    signals:
+      - ADC1:EXTI11
+      - ADC2:EXTI11
+      - FSMC:NIOS16
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF12:
+    position: 50
+    type: I/O
+    signals:
+      - FSMC:A6
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  VSS-6:
+    position: 51
+    type: power
+  VDD-6:
+    position: 52
+    type: power
+  PF13:
+    position: 53
+    type: I/O
+    signals:
+      - FSMC:A7
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF14:
+    position: 54
+    type: I/O
+    signals:
+      - FSMC:A8
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PF15:
+    position: 55
+    type: I/O
+    signals:
+      - ADC1:EXTI15
+      - ADC2:EXTI15
+      - FSMC:A9
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG0:
+    position: 56
+    type: I/O
+    signals:
+      - FSMC:A10
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG1:
+    position: 57
+    type: I/O
+    signals:
+      - FSMC:A11
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PE7:
+    position: 58
+    type: I/O
+    signals:
+      - FSMC:D4
+      - FSMC:DA4
+      - TMR1:ETR
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE8:
+    position: 59
+    type: I/O
+    signals:
+      - FSMC:D5
+      - FSMC:DA5
+      - TMR1:CH1N
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE9:
+    position: 60
+    type: I/O
+    signals:
+      - DAC:EXTI9
+      - FSMC:D6
+      - FSMC:DA6
+      - TMR1:CH1
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  VSS-7:
+    position: 61
+    type: power
+  VDD-7:
+    position: 62
+    type: power
+  PE10:
+    position: 63
+    type: I/O
+    signals:
+      - FSMC:D7
+      - FSMC:DA7
+      - TMR1:CH2N
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE11:
+    position: 64
+    type: I/O
+    signals:
+      - ADC1:EXTI11
+      - ADC2:EXTI11
+      - FSMC:D8
+      - FSMC:DA8
+      - TMR1:CH2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE12:
+    position: 65
+    type: I/O
+    signals:
+      - FSMC:D9
+      - FSMC:DA9
+      - TMR1:CH3N
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE13:
+    position: 66
+    type: I/O
+    signals:
+      - FSMC:D10
+      - FSMC:DA10
+      - TMR1:CH3
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE14:
+    position: 67
+    type: I/O
+    signals:
+      - FSMC:D11
+      - FSMC:DA11
+      - TMR1:CH4
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE15:
+    position: 68
+    type: I/O
+    signals:
+      - ADC1:EXTI15
+      - ADC2:EXTI15
+      - FSMC:D12
+      - FSMC:DA12
+      - TMR1:BKIN
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB10:
+    position: 69
+    type: I/O
+    signals:
+      - I2C2:SCL
+      - TMR2:CH3
+      - USART3:TX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB11:
+    position: 70
+    type: I/O
+    signals:
+      - ADC1:EXTI11
+      - ADC2:EXTI11
+      - I2C2:SDA
+      - TMR2:CH4
+      - USART3:RX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  VSS-1:
+    position: 71
+    type: power
+  VDD-1:
+    position: 72
+    type: power
+  PB12:
+    position: 73
+    type: I/O
+    signals:
+      - I2C2:SMBA
+      - I2S2:WS
+      - SPI2:NSS
+      - TMR1:BKIN
+      - USART3:CK
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB13:
+    position: 74
+    type: I/O
+    signals:
+      - I2S2:CK
+      - SPI2:SCK
+      - TMR1:CH1N
+      - USART3:CTS
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB14:
+    position: 75
+    type: I/O
+    signals:
+      - SPI2:MISO
+      - TMR1:CH2N
+      - USART3:RTS
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB15:
+    position: 76
+    type: I/O
+    signals:
+      - ADC1:EXTI15
+      - ADC2:EXTI15
+      - I2S2:SD
+      - SPI2:MOSI
+      - TMR1:CH3N
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD8:
+    position: 77
+    type: I/O
+    signals:
+      - FSMC:D13
+      - FSMC:DA13
+      - USART3:TX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD9:
+    position: 78
+    type: I/O
+    signals:
+      - DAC:EXTI9
+      - FSMC:D14
+      - FSMC:DA14
+      - USART3:RX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD10:
+    position: 79
+    type: I/O
+    signals:
+      - FSMC:D15
+      - FSMC:DA15
+      - USART3:CK
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD11:
+    position: 80
+    type: I/O
+    signals:
+      - ADC1:EXTI11
+      - ADC2:EXTI11
+      - FSMC:A16
+      - FSMC:CLE
+      - USART3:CTS
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD12:
+    position: 81
+    type: I/O
+    signals:
+      - FSMC:A17
+      - FSMC:ALE
+      - TMR4:CH1
+      - USART3:RTS
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD13:
+    position: 82
+    type: I/O
+    signals:
+      - FSMC:A18
+      - TMR4:CH2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  VSS-8:
+    position: 83
+    type: power
+  VDD-8:
+    position: 84
+    type: power
+  PD14:
+    position: 85
+    type: I/O
+    signals:
+      - FSMC:D0
+      - FSMC:DA0
+      - TMR4:CH3
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD15:
+    position: 86
+    type: I/O
+    signals:
+      - ADC1:EXTI15
+      - ADC2:EXTI15
+      - FSMC:D1
+      - FSMC:DA1
+      - TMR4:CH4
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PG2:
+    position: 87
+    type: I/O
+    signals:
+      - FSMC:A12
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG3:
+    position: 88
+    type: I/O
+    signals:
+      - FSMC:A13
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG4:
+    position: 89
+    type: I/O
+    signals:
+      - FSMC:A14
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG5:
+    position: 90
+    type: I/O
+    signals:
+      - FSMC:A15
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG6:
+    position: 91
+    type: I/O
+    signals:
+      - FSMC:INT2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG7:
+    position: 92
+    type: I/O
+    signals:
+      - FSMC:INT3
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG8:
+    position: 93
+    type: I/O
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  VSS-9:
+    position: 94
+    type: power
+  VDD-9:
+    position: 95
+    type: power
+  PC6:
+    position: 96
+    type: I/O
+    signals:
+      - I2S2:MCK
+      - SDIO:D6
+      - TMR3:CH1
+      - TMR8:CH1
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC7:
+    position: 97
+    type: I/O
+    signals:
+      - I2S3:MCK
+      - SDIO:D7
+      - TMR3:CH2
+      - TMR8:CH2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC8:
+    position: 98
+    type: I/O
+    signals:
+      - SDIO:D0
+      - TMR3:CH3
+      - TMR8:CH3
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC9:
+    position: 99
+    type: I/O
+    signals:
+      - DAC:EXTI9
+      - SDIO:D1
+      - TMR3:CH4
+      - TMR8:CH4
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA8:
+    position: 100
+    type: I/O
+    signals:
+      - RCM:MCO
+      - TMR1:CH1
+      - USART1:CK
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA9:
+    position: 101
+    type: I/O
+    signals:
+      - DAC:EXTI9
+      - TMR1:CH2
+      - USART1:TX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA10:
+    position: 102
+    type: I/O
+    signals:
+      - TMR1:CH3
+      - USART1:RX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA11:
+    position: 103
+    type: I/O
+    signals:
+      - ADC1:EXTI11
+      - ADC2:EXTI11
+      - CAN:RX
+      - TMR1:CH4
+      - USART1:CTS
+      - USB:DM
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA12:
+    position: 104
+    type: I/O
+    signals:
+      - CAN:TX
+      - TMR1:ETR
+      - USART1:RTS
+      - USB:DP
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA13:
+    position: 105
+    type: I/O
+    signals:
+      - SYS:JTMS-SWDIO
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  NC:
+    position: 106
+    type: nc
+  VSS-2:
+    position: 107
+    type: power
+  VDD-2:
+    position: 108
+    type: power
+  PA14:
+    position: 109
+    type: I/O
+    signals:
+      - SYS:JTCK-SWCLK
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PA15:
+    position: 110
+    type: I/O
+    signals:
+      - ADC1:EXTI15
+      - ADC2:EXTI15
+      - I2S3:WS
+      - SPI1:NSS
+      - SPI3:NSS
+      - SYS:JTDI
+      - TMR2:CH1
+      - TMR2:ETR
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC10:
+    position: 111
+    type: I/O
+    signals:
+      - SDIO:D2
+      - UART4:TX
+      - USART3:TX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC11:
+    position: 112
+    type: I/O
+    signals:
+      - ADC1:EXTI11
+      - ADC2:EXTI11
+      - SDIO:D3
+      - UART4:RX
+      - USART3:RX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PC12:
+    position: 113
+    type: I/O
+    signals:
+      - SDIO:CK
+      - UART5:TX
+      - USART3:CK
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD0:
+    position: 114
+    type: I/O
+    signals:
+      - CAN:RX
+      - FSMC:D2
+      - FSMC:DA2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD1:
+    position: 115
+    type: I/O
+    signals:
+      - CAN:TX
+      - FSMC:D3
+      - FSMC:DA3
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD2:
+    position: 116
+    type: I/O
+    signals:
+      - SDIO:CMD
+      - TMR3:ETR
+      - UART5:RX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD3:
+    position: 117
+    type: I/O
+    signals:
+      - FSMC:CLK
+      - USART2:CTS
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD4:
+    position: 118
+    type: I/O
+    signals:
+      - FSMC:NOE
+      - USART2:RTS
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD5:
+    position: 119
+    type: I/O
+    signals:
+      - FSMC:NWE
+      - USART2:TX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  VSS-10:
+    position: 120
+    type: power
+  VDD-10:
+    position: 121
+    type: power
+  PD6:
+    position: 122
+    type: I/O
+    signals:
+      - FSMC:NWAIT
+      - USART2:RX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PD7:
+    position: 123
+    type: I/O
+    signals:
+      - FSMC:NCE2
+      - FSMC:NE1
+      - USART2:CK
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PG9:
+    position: 124
+    type: I/O
+    signals:
+      - DAC:EXTI9
+      - FSMC:NCE3
+      - FSMC:NE2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG10:
+    position: 125
+    type: I/O
+    signals:
+      - FSMC:NCE4-1
+      - FSMC:NE3
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG11:
+    position: 126
+    type: I/O
+    signals:
+      - ADC1:EXTI11
+      - ADC2:EXTI11
+      - FSMC:NCE4-2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG12:
+    position: 127
+    type: I/O
+    signals:
+      - FSMC:NE4
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG13:
+    position: 128
+    type: I/O
+    signals:
+      - FSMC:A24
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PG14:
+    position: 129
+    type: I/O
+    signals:
+      - FSMC:A25
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  VSS-11:
+    position: 130
+    type: power
+  VDD-11:
+    position: 131
+    type: power
+  PG15:
+    position: 132
+    type: I/O
+    signals:
+      - ADC1:EXTI15
+      - ADC2:EXTI15
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EINT
+  PB3:
+    position: 133
+    type: I/O
+    signals:
+      - I2S3:CK
+      - SPI1:SCK
+      - SPI3:SCK
+      - SYS:JTDO-TRACESWO
+      - TMR2:CH2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB4:
+    position: 134
+    type: I/O
+    signals:
+      - SPI1:MISO
+      - SPI3:MISO
+      - SYS:NJTRST
+      - TMR3:CH1
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB5:
+    position: 135
+    type: I/O
+    signals:
+      - I2C1:SMBA
+      - I2S3:SD
+      - SPI1:MOSI
+      - SPI3:MOSI
+      - TMR3:CH2
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB6:
+    position: 136
+    type: I/O
+    signals:
+      - I2C1:SCL
+      - TMR4:CH1
+      - USART1:TX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB7:
+    position: 137
+    type: I/O
+    signals:
+      - FSMC:NL
+      - I2C1:SDA
+      - TMR4:CH2
+      - USART1:RX
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  BOOT0:
+    position: 138
+    type: boot
+  PB8:
+    position: 139
+    type: I/O
+    signals:
+      - CAN:RX
+      - I2C1:SCL
+      - SDIO:D4
+      - TMR4:CH3
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PB9:
+    position: 140
+    type: I/O
+    signals:
+      - CAN:TX
+      - DAC:EXTI9
+      - I2C1:SDA
+      - SDIO:D5
+      - TMR4:CH4
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE0:
+    position: 141
+    type: I/O
+    signals:
+      - FSMC:NBL0
+      - TMR4:ETR
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  PE1:
+    position: 142
+    type: I/O
+    signals:
+      - FSMC:NBL1
+    modes:
+      - GPIO:Input
+      - GPIO:Output
+      - GPIO:Analog
+      - GPIO:EVENTOUT
+      - GPIO:EINT
+  VSS-3:
+    position: 143
+    type: power
+  VDD-3:
+    position: 144
+    type: power
