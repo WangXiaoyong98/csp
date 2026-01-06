@@ -180,12 +180,7 @@ pins:
     signals:
       - EPWM:1A
       - LPTIM:3
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:0
   PB0:
     position: 2
     type: I/O
@@ -193,74 +188,47 @@ pins:
       - EPWM:1B
       - LPTIM:2
       - OUTPUTXBAR:1
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:1
   PB1:
     position: 3
     type: I/O
     signals:
       - FSMC:A20
       - SYS:TRACED1
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:2
   PA23:
     position: 4
     type: I/O
     signals:
       - FSMC:A21
       - SYS:TRACED2
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:3
   PB10:
     position: 5
     type: I/O
     signals:
       - FSMC:A22
       - SYS:TRACED3
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:4
   PB11:
     position: 6
-    type: power
+    type: I/O
+    signals:
+      - GPIO:5
+
   VDD0:
     position: 7
     type: I/O
     signals:
       - RTC:OUT
       - RTC:TAMPER
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:6
   VSS50_ANA1:
     position: 8
     type: I/O
     signals:
       - RCM:OSC32-IN
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:7
   GND1:
     position: 9
     type: I/O
@@ -268,111 +236,78 @@ pins:
       - ADC1:EXTI15
       - ADC2:EXTI15
       - RCM:OSC32-OUT
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:8
   XRS:
     position: 10
     type: I/O
     signals:
       - FSMC:A0
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:9
   PB13:
     position: 11
     type: I/O
     signals:
       - FSMC:A1
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:10
   ADCINA7:
     position: 12
     type: I/O
     signals:
       - FSMC:A2
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:11
   PB14:
     position: 13
     type: I/O
     signals:
       - FSMC:A3
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:12
   PB15:
     position: 14
     type: I/O
     signals:
       - FSMC:A4
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:13
   PB16:
     position: 15
     type: I/O
     signals:
       - FSMC:A5
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:14
   PB17:
     position: 16
-    type: power
+    type: I/O
+    signals:
+      - FSMC:A5
+      - GPIO:15
+
   PB18:
     position: 17
-    type: power
+    type: I/O
+    signals:
+      - FSMC:A5
+      - GPIO:16
+
   PB19:
     position: 18
     type: I/O
     signals:
       - ADC3:IN4
       - FSMC:NIORD
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:17
   PB20:
     position: 19
     type: I/O
     signals:
       - ADC3:IN5
       - FSMC:NREG
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:18
   ADC_VREFP:
     position: 20
     type: I/O
     signals:
       - ADC3:IN6
       - FSMC:NIOWR
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:19
   VDDA:
     position: 21
     type: I/O
@@ -380,35 +315,31 @@ pins:
       - ADC3:IN7
       - DAC:EXTI9
       - FSMC:CD
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:20
   VSSA:
     position: 22
     type: I/O
     signals:
       - ADC3:IN8
       - FSMC:INTR
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:21
   ADC_VREFN:
     position: 23
     type: I/O
     signals:
       - RCM:OSC-IN
+      - GPIO:22
   PB27:
     position: 24
     type: I/O
     signals:
       - RCM:OSC-OUT
+      - GPIO:23
   PB26:
     position: 25
-    type: reset
+    type: I/O
+    signals:
+      - GPIO:24
   PB25:
     position: 26
     type: I/O
@@ -416,12 +347,7 @@ pins:
       - ADC1:IN10
       - ADC2:IN10
       - ADC3:IN10
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:25
   PB24:
     position: 27
     type: I/O
@@ -429,12 +355,7 @@ pins:
       - ADC1:IN11
       - ADC2:IN11
       - ADC3:IN11
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:26
   PB23:
     position: 28
     type: I/O
@@ -442,12 +363,7 @@ pins:
       - ADC1:IN12
       - ADC2:IN12
       - ADC3:IN12
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:27
   PB22:
     position: 29
     type: I/O
@@ -455,24 +371,27 @@ pins:
       - ADC1:IN13
       - ADC2:IN13
       - ADC3:IN13
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:28
   PB21:
     position: 30
-    type: power
+    type: I/O
+    signals:
+      - GPIO:29
   ADCINB7:
     position: 31
-    type: power
+    type: I/O
+    signals:
+      - GPIO:30
   VREF0P8TEST:
     position: 32
-    type: power
+    type: I/O
+    signals:
+      - GPIO:31
   PA27:
     position: 33
-    type: power
+    type: I/O
+    signals:
+      - GPIO:32
   PA31:
     position: 34
     type: I/O
@@ -486,12 +405,7 @@ pins:
       - TMR5:CH1
       - TMR8:ETR
       - USART2:CTS
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:33
   PA30:
     position: 35
     type: I/O
@@ -502,12 +416,7 @@ pins:
       - TMR2:CH2
       - TMR5:CH2
       - USART2:RTS
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:34
   PA29:
     position: 36
     type: I/O
@@ -518,12 +427,7 @@ pins:
       - TMR2:CH3
       - TMR5:CH3
       - USART2:TX
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:35
   GND2:
     position: 37
     type: I/O
@@ -534,18 +438,17 @@ pins:
       - TMR2:CH4
       - TMR5:CH4
       - USART2:RX
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:36
   VDDIO1:
     position: 38
-    type: power
+    type: I/O
+    signals:
+      - GPIO:37
   PA26:
     position: 39
-    type: power
+    type: I/O
+    signals:
+      - GPIO:38
   PA9:
     position: 40
     type: I/O
@@ -555,12 +458,7 @@ pins:
       - DAC:OUT1
       - SPI1:NSS
       - USART2:CK
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:39
   PA28:
     position: 41
     type: I/O
@@ -569,12 +467,7 @@ pins:
       - ADC2:IN5
       - DAC:OUT2
       - SPI1:SCK
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:40
   CP_EXT_TEST:
     position: 42
     type: I/O
@@ -585,12 +478,7 @@ pins:
       - TMR1:BKIN
       - TMR3:CH1
       - TMR8:BKIN
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:41
   PA18:
     position: 43
     type: I/O
@@ -601,36 +489,21 @@ pins:
       - TMR1:CH1N
       - TMR3:CH2
       - TMR8:CH1N
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:42
   PA17:
     position: 44
     type: I/O
     signals:
       - ADC1:IN14
       - ADC2:IN14
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:43
   PA8:
     position: 45
     type: I/O
     signals:
       - ADC1:IN15
       - ADC2:IN15
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:44
   PA25:
     position: 46
     type: I/O
@@ -640,12 +513,7 @@ pins:
       - TMR1:CH2N
       - TMR3:CH3
       - TMR8:CH2N
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:45
   PB12:
     position: 47
     type: I/O
@@ -655,21 +523,12 @@ pins:
       - TMR1:CH3N
       - TMR3:CH4
       - TMR8:CH3N
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:46
   PA16:
     position: 48
     type: I/O
     modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:47
   PA12:
     position: 49
     type: I/O
@@ -677,47 +536,35 @@ pins:
       - ADC1:EXTI11
       - ADC2:EXTI11
       - FSMC:NIOS16
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:48
   PB9:
     position: 50
     type: I/O
     signals:
       - FSMC:A6
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:49
   FLASH_VPP:
     position: 51
-    type: power
+    type: I/O
+    signals:
+      - GPIO:50
   PA7:
     position: 52
-    type: power
+    type: I/O
+    signals:
+      - GPIO:51
   PA6:
     position: 53
     type: I/O
     signals:
       - FSMC:A7
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:52
   XOSC16M_OUT:
     position: 54
     type: I/O
     signals:
       - FSMC:A8
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:53
   XOSC16M_IN:
     position: 55
     type: I/O
@@ -725,31 +572,19 @@ pins:
       - ADC1:EXTI15
       - ADC2:EXTI15
       - FSMC:A9
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:54
   VSS50_ANA2:
     position: 56
     type: I/O
     signals:
       - FSMC:A10
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:55
   GND3:
     position: 57
     type: I/O
     signals:
       - FSMC:A11
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:56
   VDD1:
     position: 58
     type: I/O
@@ -757,12 +592,7 @@ pins:
       - FSMC:D4
       - FSMC:DA4
       - TMR1:ETR
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:57
   PA19:
     position: 59
     type: I/O
@@ -770,12 +600,7 @@ pins:
       - FSMC:D5
       - FSMC:DA5
       - TMR1:CH1N
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:58
   PB7:
     position: 60
     type: I/O
@@ -784,18 +609,19 @@ pins:
       - FSMC:D6
       - FSMC:DA6
       - TMR1:CH1
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:59
   VSS50_ANA3:
     position: 61
-    type: power
+    type: I/O
+    signals:
+      - FSMC:A12
+      - GPIO:60
   PB6:
     position: 62
-    type: power
+    type: I/O
+    signals:
+      - FSMC:A13
+      - GPIO:61
   PB5:
     position: 63
     type: I/O
@@ -803,12 +629,7 @@ pins:
       - FSMC:D7
       - FSMC:DA7
       - TMR1:CH2N
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:62
   PB3:
     position: 64
     type: I/O
@@ -818,12 +639,7 @@ pins:
       - FSMC:D8
       - FSMC:DA8
       - TMR1:CH2
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:63
   PB4:
     position: 65
     type: I/O
@@ -831,12 +647,7 @@ pins:
       - FSMC:D9
       - FSMC:DA9
       - TMR1:CH3N
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:64
   VSS50_ANA4:
     position: 66
     type: I/O
@@ -844,12 +655,7 @@ pins:
       - FSMC:D10
       - FSMC:DA10
       - TMR1:CH3
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:65
   VSS50_ANA5:
     position: 67
     type: I/O
@@ -857,12 +663,7 @@ pins:
       - FSMC:D11
       - FSMC:DA11
       - TMR1:CH4
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:66
   MPW_EXT_TEST:
     position: 68
     type: I/O
@@ -872,12 +673,7 @@ pins:
       - FSMC:D12
       - FSMC:DA12
       - TMR1:BKIN
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:67
   PB30:
     position: 69
     type: I/O
@@ -885,12 +681,7 @@ pins:
       - I2C2:SCL
       - TMR2:CH3
       - USART3:TX
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:68
   PB29:
     position: 70
     type: I/O
@@ -900,18 +691,17 @@ pins:
       - I2C2:SDA
       - TMR2:CH4
       - USART3:RX
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:69
   PA11:
     position: 71
-    type: power
+    type: I/O
+    signals:
+      - GPIO:70
   PA5:
     position: 72
-    type: power
+    type: I/O
+    signals:
+      - GPIO:71
   PA4:
     position: 73
     type: I/O
@@ -921,12 +711,7 @@ pins:
       - SPI2:NSS
       - TMR1:BKIN
       - USART3:CK
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:72
   PB8:
     position: 74
     type: I/O
@@ -935,12 +720,7 @@ pins:
       - SPI2:SCK
       - TMR1:CH1N
       - USART3:CTS
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:73
   PA10:
     position: 75
     type: I/O
@@ -948,12 +728,7 @@ pins:
       - SPI2:MISO
       - TMR1:CH2N
       - USART3:RTS
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:74
   PA3:
     position: 76
     type: I/O
@@ -963,12 +738,7 @@ pins:
       - I2S2:SD
       - SPI2:MOSI
       - TMR1:CH3N
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:75
   PA2:
     position: 77
     type: I/O
@@ -976,12 +746,7 @@ pins:
       - FSMC:D13
       - FSMC:DA13
       - USART3:TX
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:76
   PA1:
     position: 78
     type: I/O
@@ -990,12 +755,7 @@ pins:
       - FSMC:D14
       - FSMC:DA14
       - USART3:RX
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:77
   PA0:
     position: 79
     type: I/O
@@ -1003,12 +763,7 @@ pins:
       - FSMC:D15
       - FSMC:DA15
       - USART3:CK
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:78
   VDD50_ANA:
     position: 80
     type: I/O
@@ -1018,12 +773,7 @@ pins:
       - FSMC:A16
       - FSMC:CLE
       - USART3:CTS
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:79
   VDDIO2:
     position: 81
     type: I/O
@@ -1032,30 +782,24 @@ pins:
       - FSMC:ALE
       - TMR4:CH1
       - USART3:RTS
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:80
   GND4:
     position: 82
     type: I/O
     signals:
       - FSMC:A18
       - TMR4:CH2
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:81
   VDD2:
     position: 83
-    type: power
+    type: I/O
+    signals:
+      - GPIO:82
   PB28:
     position: 84
-    type: power
+    type: I/O
+    signals:
+      - GPIO:83
   PB2:
     position: 85
     type: I/O
@@ -1063,12 +807,7 @@ pins:
       - FSMC:D0
       - FSMC:DA0
       - TMR4:CH3
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:84
   PA15:
     position: 86
     type: I/O
@@ -1078,59 +817,34 @@ pins:
       - FSMC:D1
       - FSMC:DA1
       - TMR4:CH4
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EVENTOUT
-      - GPIO:EINT
+      - GPIO:85
   PA13:
     position: 87
     type: I/O
     signals:
       - FSMC:A12
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:86
   PA14:
     position: 88
     type: I/O
     signals:
       - FSMC:A13
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:87
   PA20:
     position: 89
     type: I/O
     signals:
       - FSMC:A14
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:88
   PA21:
     position: 90
     type: I/O
     signals:
       - FSMC:A15
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:89
   PA24:
     position: 91
     type: I/O
     signals:
       - FSMC:INT2
-    modes:
-      - GPIO:Input
-      - GPIO:Output
-      - GPIO:Analog
-      - GPIO:EINT
+      - GPIO:90
