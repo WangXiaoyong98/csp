@@ -178,673 +178,642 @@ pins:
     position: 1
     type: I/O
     signals:
-      - EPWM:1A
-      - LPTIM:3
-      - GPIO:0
+      - GPIO0
+      - EPWM1_A
+      - LPTIM3
   PB0:
     position: 2
     type: I/O
     signals:
-      - EPWM:1B
-      - LPTIM:2
-      - OUTPUTXBAR:1
-      - GPIO:1
+      - GPIO1
+      - EPWM1_B
+      - LPTIM2
+      - OUTPUTXBAR1
   PB1:
     position: 3
     type: I/O
     signals:
-      - FSMC:A20
-      - SYS:TRACED1
-      - GPIO:2
+      - GPIO2
+      - EPWM2_A
+      - LPTIM1
   PA23:
     position: 4
     type: I/O
     signals:
-      - FSMC:A21
-      - SYS:TRACED2
-      - GPIO:3
+      - GPIO3
+      - EPWM2_B
+      - SPI1_SIN
+      - SPI1_SOUT
   PB10:
     position: 5
     type: I/O
     signals:
-      - FSMC:A22
-      - SYS:TRACED3
-      - GPIO:4
+      - GPIO4
+      - EPWM3_A
+      - LPTIM0
   PB11:
     position: 6
     type: I/O
     signals:
-      - GPIO:5
-
+      - GPIO5
+      - EPWM3_B
   VDD0:
     position: 7
     type: I/O
     signals:
-      - RTC:OUT
-      - RTC:TAMPER
-      - GPIO:6
+      - GPIO6
+      - EPWM4_A
+      - SYNCOUT
+      - OUTPUTXBAR2
   VSS50_ANA1:
     position: 8
     type: I/O
     signals:
-      - RCM:OSC32-IN
-      - GPIO:7
+      - GPIO7
+      - EPWM4_B
+      - SCI1_RX
   GND1:
     position: 9
     type: I/O
     signals:
-      - ADC1:EXTI15
-      - ADC2:EXTI15
-      - RCM:OSC32-OUT
-      - GPIO:8
+      - GPIO8
+      - EPWM5_A
+      - ADCSOCAO
   XRS:
     position: 10
     type: I/O
     signals:
-      - FSMC:A0
-      - GPIO:9
+      - GPIO9
+      - EPWM5_B
+      - SCI1_TX
   PB13:
     position: 11
     type: I/O
     signals:
-      - FSMC:A1
-      - GPIO:10
+      - GPIO10
+      - EPWM6_A
+      - ADCSOCBO
+      - CLKOUT
   ADCINA7:
     position: 12
     type: I/O
     signals:
-      - FSMC:A2
-      - GPIO:11
+      - GPIO11
+      - EPWM6_B
+      - SCI2_RX
   PB14:
     position: 13
     type: I/O
     signals:
-      - FSMC:A3
-      - GPIO:12
+      - GPIO12
+      - SCI2_TX
+      - SPI2_SIN
+      - OUTPUTXBAR3
+      - SPI2_SOUT
   PB15:
     position: 14
     type: I/O
     signals:
-      - FSMC:A4
-      - GPIO:13
+      - GPIO13
+      - MCAN1_CLK
+      - MCAN2_TX0
+      - SPI2_SOUT
+      - OUTPUTXBAR4
+      - SPI2_SIN
   PB16:
     position: 15
     type: I/O
     signals:
-      - FSMC:A5
-      - GPIO:14
+      - GPIO14
+      - SCI3_TX
+      - SPI2_CLK
+      - OUTPUTXBAR5
   PB17:
     position: 16
     type: I/O
     signals:
-      - FSMC:A5
-      - GPIO:15
-
+      - GPIO15
+      - SCI3_RX
+      - SPI2_CS0
+      - OUTPUTXBAR6
+      - SPI1_CS0
   PB18:
     position: 17
     type: I/O
     signals:
-      - FSMC:A5
-      - GPIO:16
-
+      - GPIO16
+      - SPI1_SIN
+      - SPI1_SOUT
+      - OUTPUTXBAR7
+      - SCI1_RX
   PB19:
     position: 18
     type: I/O
     signals:
-      - ADC3:IN4
-      - FSMC:NIORD
-      - GPIO:17
+      - GPIO17
+      - SPI1_SOUT
+      - SPI1_SIN
+      - OUTPUTXBAR8
+      - SCI1_TX
   PB20:
     position: 19
     type: I/O
     signals:
-      - ADC3:IN5
-      - FSMC:NREG
-      - GPIO:18
+      - GPIO18
+      - SPI1_CLK
+      - MCAN1_CLK
+      - XCLKOUT
+      - SYNCOUT
   ADC_VREFP:
     position: 20
     type: I/O
     signals:
-      - ADC3:IN6
-      - FSMC:NIOWR
-      - GPIO:19
+      - GPIO19
+      - XCLKIN
+      - SPI1_CS0
+      - SCI4_RX
   VDDA:
     position: 21
     type: I/O
     signals:
-      - ADC3:IN7
-      - DAC:EXTI9
-      - FSMC:CD
-      - GPIO:20
+      - GPIO20
+      - EQEP1A
+      - OUTPUTXBAR1
   VSSA:
     position: 22
     type: I/O
     signals:
-      - ADC3:IN8
-      - FSMC:INTR
-      - GPIO:21
+      - GPIO21
+      - EQEP1B
+      - COMP1OUT2
+      - OUTPUTXBAR2
   ADC_VREFN:
     position: 23
     type: I/O
     signals:
-      - RCM:OSC-IN
-      - GPIO:22
+      - GPIO22
+      - EQEP1S
+      - SCI5_TX
+      - SPI1_CS1
   PB27:
     position: 24
     type: I/O
     signals:
-      - RCM:OSC-OUT
-      - GPIO:23
+      - GPIO23
+      - EQEP1I
+      - SCI5_RX
+      - SPI1_CS2
   PB26:
     position: 25
     type: I/O
     signals:
-      - GPIO:24
+      - GPIO24
+      - SPI2_SOUT
+      - SPI2_SIN
+      - EWM_IN
   PB25:
     position: 26
     type: I/O
     signals:
-      - ADC1:IN10
-      - ADC2:IN10
-      - ADC3:IN10
-      - GPIO:25
+      - GPIO25
+      - SPI2_SIN
+      - SPI2_SOUT
+      - SCI1_CTS
+      - SCI4_CTS
   PB24:
     position: 27
     type: I/O
     signals:
-      - ADC1:IN11
-      - ADC2:IN11
-      - ADC3:IN11
-      - GPIO:26
+      - GPIO26
+      - SPI2_CLK
+      - SCI1_RTS
+      - SCI4_RTS
   PB23:
     position: 28
     type: I/O
     signals:
-      - ADC1:IN12
-      - ADC2:IN12
-      - ADC3:IN12
-      - GPIO:27
+      - GPIO27
+      - SPI2_CS0
+      - I2C1_DAT
   PB22:
     position: 29
     type: I/O
     signals:
-      - ADC1:IN13
-      - ADC2:IN13
-      - ADC3:IN13
-      - GPIO:28
+      - GPIO28
+      - SCI6_RX
+      - I2C2_DAT
+      - OUTPUTXBAR5
   PB21:
     position: 30
     type: I/O
     signals:
-      - GPIO:29
+      - GPIO29
+      - SCI6_TX
+      - I2C2_CLK
+      - OUTPUTXBAR4
+      - SPI4_SIN
   ADCINB7:
     position: 31
     type: I/O
     signals:
-      - GPIO:30
+      - GPIO30
+      - MCAN1_RX
+      - SD2_C4
+      - SPI4_SOUT
   VREF0P8TEST:
     position: 32
     type: I/O
     signals:
-      - GPIO:31
+      - GPIO31
+      - MCAN1_TX0
+      - SD2_D4
+      - SPI4_CLK
   PA27:
     position: 33
     type: I/O
     signals:
-      - GPIO:32
+      - GPIO32
+      - I2C1_DAT
+      - ADCSOCAO
+      - OUTPUTXBAR5
+      - SPI4_CS
   PA31:
     position: 34
     type: I/O
     signals:
-      - ADC1:IN0
-      - ADC2:IN0
-      - ADC3:IN0
-      - SYS:WKUP
-      - TMR2:CH1
-      - TMR2:ETR
-      - TMR5:CH1
-      - TMR8:ETR
-      - USART2:CTS
-      - GPIO:33
+      - GPIO33
+      - I2C1_CLK
+      - SYNCOUT
+      - ADCSOCBO
+      - OUTPUTXBAR6
+      - SCI2_CTS
   PA30:
     position: 35
     type: I/O
     signals:
-      - ADC1:IN1
-      - ADC2:IN1
-      - ADC3:IN1
-      - TMR2:CH2
-      - TMR5:CH2
-      - USART2:RTS
-      - GPIO:34
+      - GPIO34
+      - MCAN1_TX1
+      - OUTPUTXBAR7
+      - SCI2_RTS
   PA29:
     position: 36
     type: I/O
     signals:
-      - ADC1:IN2
-      - ADC2:IN2
-      - ADC3:IN2
-      - TMR2:CH3
-      - TMR5:CH3
-      - USART2:TX
-      - GPIO:35
+      - TDI
+      - GPIO35
+      - SPI3_SOUT
+      - SPI3_SIN
+      - OUTPUTXBAR3
   GND2:
     position: 37
     type: I/O
     signals:
-      - ADC1:IN3
-      - ADC2:IN3
-      - ADC3:IN3
-      - TMR2:CH4
-      - TMR5:CH4
-      - USART2:RX
-      - GPIO:36
+      - TMS 
+      - GPIO36
+      - SPI1_CS3
   VDDIO1:
     position: 38
     type: I/O
     signals:
-      - GPIO:37
+      - TDO
+      - GPIO37
+      - SPI3_SIN
+      - SPI3_SOUT
+      - OUTPUTXBAR4
+      - SYNCOUT
   PA26:
     position: 39
     type: I/O
     signals:
-      - GPIO:38
+      - TCK
+      - GPIO38
+      - OUTPUTXBAR8
   PA9:
     position: 40
     type: I/O
     signals:
-      - ADC1:IN4
-      - ADC2:IN4
-      - DAC:OUT1
-      - SPI1:NSS
-      - USART2:CK
-      - GPIO:39
+      - GPIO39
+      - SPI3_CS0
+      - SD2_C2
+      - I2C1_CLK
+      - EWM_OUT_b
   PA28:
     position: 41
     type: I/O
     signals:
-      - ADC1:IN5
-      - ADC2:IN5
-      - DAC:OUT2
-      - SPI1:SCK
-      - GPIO:40
+      - GPIO40
+      - EPWM7_A
+      - SD2_D2
+      - EQEP2S
+      - SPI1_SIN
   CP_EXT_TEST:
     position: 42
     type: I/O
     signals:
-      - ADC1:IN6
-      - ADC2:IN6
-      - SPI1:MISO
-      - TMR1:BKIN
-      - TMR3:CH1
-      - TMR8:BKIN
-      - GPIO:41
+      - GPIO41
+      - EPWM7_B
+      - SD2_C3
+      - EQEP2I
+      - SPI1_SOUT
   PA18:
     position: 43
     type: I/O
     signals:
-      - ADC1:IN7
-      - ADC2:IN7
-      - SPI1:MOSI
-      - TMR1:CH1N
-      - TMR3:CH2
-      - TMR8:CH1N
-      - GPIO:42
+      - GPIO42
+      - COMP1OUT1
+      - MCAN2_TX0
+      - SD2_D3
+      - OUTPUTXBAR1
+      - SPI1_CLK
   PA17:
     position: 44
     type: I/O
     signals:
-      - ADC1:IN14
-      - ADC2:IN14
-      - GPIO:43
+      - GPIO43
+      - COMP1OUT2
+      - MCAN2_RX
+      - OUTPUTXBAR2
+      - SPI1_CS0
   PA8:
     position: 45
     type: I/O
     signals:
-      - ADC1:IN15
-      - ADC2:IN15
-      - GPIO:44
+      - GPIO44
+      - SPI3_CLK
+      - EQEP2B
+      - SCI3_RTS
   PA25:
     position: 46
     type: I/O
     signals:
-      - ADC1:IN8
-      - ADC2:IN8
-      - TMR1:CH2N
-      - TMR3:CH3
-      - TMR8:CH2N
-      - GPIO:45
+      - GPIO45
+      - TRST
+      - EQEP2A
+      - SCI3_CTS
   PB12:
     position: 47
     type: I/O
     signals:
-      - ADC1:IN9
-      - ADC2:IN9
-      - TMR1:CH3N
-      - TMR3:CH4
-      - TMR8:CH3N
-      - GPIO:46
+      - GPIO46
+      - SD1_D1
+      - ADCINA6
+      - ADCINC14
+      - MCAN2_TX1
   PA16:
     position: 48
     type: I/O
     modes:
-      - GPIO:47
+      - GPIO47
+      - MCAN2_CLK
+      - ADCINA5
+      - ADCINC13
   PA12:
     position: 49
     type: I/O
     signals:
-      - ADC1:EXTI11
-      - ADC2:EXTI11
-      - FSMC:NIOS16
-      - GPIO:48
+      - GPIO48
+      - ADCINA4
+      - ADCINC12
+      - COMP2A
   PB9:
     position: 50
     type: I/O
     signals:
-      - FSMC:A6
-      - GPIO:49
+      - GPIO49
+      - SD1_D2
+      - ADCINA3
+      - ADCINC11
   FLASH_VPP:
     position: 51
     type: I/O
     signals:
-      - GPIO:50
+      - GPIO50
+      - ADCINA2
+      - ADCINC10
+      - COMP1A
   PA7:
     position: 52
     type: I/O
     signals:
-      - GPIO:51
+      - GPIO51
+      - SD1_C2
+      - ADCINA1
+      - ADCINC9
   PA6:
     position: 53
     type: I/O
     signals:
-      - FSMC:A7
-      - GPIO:52
+      - GPIO52
+      - SD1_C3
+      - ADCINA0
+      - ADCINC8
   XOSC16M_OUT:
     position: 54
     type: I/O
     signals:
-      - FSMC:A8
-      - GPIO:53
+      - GPIO53
+      - SD1_C3
+      - ADCINB6
+      - ADCINC6
   XOSC16M_IN:
     position: 55
     type: I/O
     signals:
-      - ADC1:EXTI15
-      - ADC2:EXTI15
-      - FSMC:A9
-      - GPIO:54
+      - GPIO54
+      - SD1_D4
+      - ADCINB5
+      - ADCINC5
   VSS50_ANA2:
     position: 56
     type: I/O
     signals:
-      - FSMC:A10
-      - GPIO:55
+      - GPIO55
+      - ADCINB4
+      - ADCINC4
+      - COMP2B
   GND3:
     position: 57
     type: I/O
     signals:
-      - FSMC:A11
-      - GPIO:56
+      - GPIO56
+      - SD1_C4
+      - ADCINB3
+      - ADCINC3
   VDD1:
     position: 58
     type: I/O
     signals:
-      - FSMC:D4
-      - FSMC:DA4
-      - TMR1:ETR
-      - GPIO:57
+      - GPIO57
+      - ADCINB2
+      - ADCINC2
   PA19:
     position: 59
     type: I/O
     signals:
-      - FSMC:D5
-      - FSMC:DA5
-      - TMR1:CH1N
-      - GPIO:58
+      - GPIO58
+      - SD2_C1
+      - ADCINB1
+      - ADCINC1
   PB7:
     position: 60
     type: I/O
     signals:
-      - DAC:EXTI9
-      - FSMC:D6
-      - FSMC:DA6
-      - TMR1:CH1
-      - GPIO:59
+      - GPIO59
+      - SD2_D1
+      - ADCINB0
+      - ADCINC0
   VSS50_ANA3:
     position: 61
     type: I/O
     signals:
-      - FSMC:A12
-      - GPIO:60
+      - GPIO60
   PB6:
     position: 62
     type: I/O
     signals:
-      - FSMC:A13
-      - GPIO:61
+      - GPIO61
   PB5:
     position: 63
     type: I/O
     signals:
-      - FSMC:D7
-      - FSMC:DA7
-      - TMR1:CH2N
-      - GPIO:62
+      - GPIO62
   PB3:
     position: 64
     type: I/O
     signals:
-      - ADC1:EXTI11
-      - ADC2:EXTI11
-      - FSMC:D8
-      - FSMC:DA8
-      - TMR1:CH2
-      - GPIO:63
+      - GPIO63
   PB4:
     position: 65
     type: I/O
     signals:
-      - FSMC:D9
-      - FSMC:DA9
-      - TMR1:CH3N
-      - GPIO:64
+      - GPIO64
   VSS50_ANA4:
     position: 66
     type: I/O
     signals:
-      - FSMC:D10
-      - FSMC:DA10
-      - TMR1:CH3
-      - GPIO:65
+      - GPIO65
   VSS50_ANA5:
     position: 67
     type: I/O
     signals:
-      - FSMC:D11
-      - FSMC:DA11
-      - TMR1:CH4
-      - GPIO:66
+      - GPIO66
   MPW_EXT_TEST:
     position: 68
     type: I/O
     signals:
-      - ADC1:EXTI15
-      - ADC2:EXTI15
-      - FSMC:D12
-      - FSMC:DA12
-      - TMR1:BKIN
-      - GPIO:67
+      - GPIO67
   PB30:
     position: 69
     type: I/O
     signals:
-      - I2C2:SCL
-      - TMR2:CH3
-      - USART3:TX
-      - GPIO:68
+      - GPIO68
   PB29:
     position: 70
     type: I/O
     signals:
-      - ADC1:EXTI11
-      - ADC2:EXTI11
-      - I2C2:SDA
-      - TMR2:CH4
-      - USART3:RX
-      - GPIO:69
+      - GPIO69
   PA11:
     position: 71
     type: I/O
     signals:
-      - GPIO:70
+      - GPIO70
   PA5:
     position: 72
     type: I/O
     signals:
-      - GPIO:71
+      - GPIO71
   PA4:
     position: 73
     type: I/O
     signals:
-      - I2C2:SMBA
-      - I2S2:WS
-      - SPI2:NSS
-      - TMR1:BKIN
-      - USART3:CK
-      - GPIO:72
+      - GPIO72
   PB8:
     position: 74
     type: I/O
     signals:
-      - I2S2:CK
-      - SPI2:SCK
-      - TMR1:CH1N
-      - USART3:CTS
-      - GPIO:73
+      - GPIO73
   PA10:
     position: 75
     type: I/O
     signals:
-      - SPI2:MISO
-      - TMR1:CH2N
-      - USART3:RTS
-      - GPIO:74
+      - GPIO74
   PA3:
     position: 76
     type: I/O
     signals:
-      - ADC1:EXTI15
-      - ADC2:EXTI15
-      - I2S2:SD
-      - SPI2:MOSI
-      - TMR1:CH3N
-      - GPIO:75
+      - GPIO75
   PA2:
     position: 77
     type: I/O
     signals:
-      - FSMC:D13
-      - FSMC:DA13
-      - USART3:TX
-      - GPIO:76
+      - GPIO76
   PA1:
     position: 78
     type: I/O
     signals:
-      - DAC:EXTI9
-      - FSMC:D14
-      - FSMC:DA14
-      - USART3:RX
-      - GPIO:77
+      - GPIO77
   PA0:
     position: 79
     type: I/O
     signals:
-      - FSMC:D15
-      - FSMC:DA15
-      - USART3:CK
-      - GPIO:78
+      - GPIO78
   VDD50_ANA:
     position: 80
     type: I/O
     signals:
-      - ADC1:EXTI11
-      - ADC2:EXTI11
-      - FSMC:A16
-      - FSMC:CLE
-      - USART3:CTS
-      - GPIO:79
+      - GPIO79
   VDDIO2:
     position: 81
     type: I/O
     signals:
-      - FSMC:A17
-      - FSMC:ALE
-      - TMR4:CH1
-      - USART3:RTS
-      - GPIO:80
+      - GPIO80
   GND4:
     position: 82
     type: I/O
     signals:
-      - FSMC:A18
-      - TMR4:CH2
-      - GPIO:81
+      - GPIO81
   VDD2:
     position: 83
     type: I/O
     signals:
-      - GPIO:82
+      - GPIO82
   PB28:
     position: 84
     type: I/O
     signals:
-      - GPIO:83
+      - GPIO83
   PB2:
     position: 85
     type: I/O
     signals:
-      - FSMC:D0
-      - FSMC:DA0
-      - TMR4:CH3
-      - GPIO:84
+      - GPIO84
   PA15:
     position: 86
     type: I/O
     signals:
-      - ADC1:EXTI15
-      - ADC2:EXTI15
-      - FSMC:D1
-      - FSMC:DA1
-      - TMR4:CH4
-      - GPIO:85
+      - GPIO85
   PA13:
     position: 87
     type: I/O
     signals:
-      - FSMC:A12
-      - GPIO:86
+      - GPIO86
   PA14:
     position: 88
     type: I/O
     signals:
-      - FSMC:A13
-      - GPIO:87
+      - GPIO87
   PA20:
     position: 89
     type: I/O
     signals:
-      - FSMC:A14
-      - GPIO:88
+      - GPIO88
   PA21:
     position: 90
     type: I/O
     signals:
-      - FSMC:A15
-      - GPIO:89
+      - GPIO89
   PA24:
     position: 91
     type: I/O
     signals:
-      - FSMC:INT2
-      - GPIO:90
+      - GPIO90
