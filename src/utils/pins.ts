@@ -151,12 +151,15 @@ export class Pin {
     let locked = false
     if (instance === this._ip.instance && this.modes.includes(func)) {
       locked = true
-      const presets = this.presets[state] ?? {}
-      const models: Record<string, any> = {}
-      for (const [key, refParameter] of Object.entries(presets.refParameters.value)) {
-        models[key] = refParameter.default.value
+      // 确保state存在且对应的preset存在
+      if (state && this.presets[state]) {
+        const presets = this.presets[state]
+        const models: Record<string, any> = {}
+        for (const [key, refParameter] of Object.entries(presets.refParameters.value)) {
+          models[key] = refParameter.default.value
+        }
+        this._project.configs.set<Record<string, any>>(this._ipPath, models)
       }
-      this._project.configs.set<Record<string, any>>(this._ipPath, models)
     }
 
     this._project.configs.set<ProjectConfigsPinUnitType>(this._path, {

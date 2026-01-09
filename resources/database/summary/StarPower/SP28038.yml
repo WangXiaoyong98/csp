@@ -178,642 +178,702 @@ pins:
     position: 1
     type: I/O
     signals:
-      - GPIO0
-      - EPWM1_A
-      - LPTIM3
+      - EPWM1_A:Y
+      - LPTIM3:Y
+    modes:
+      - GPIO:0
   PB0:
     position: 2
     type: I/O
     signals:
-      - GPIO1
-      - EPWM1_B
-      - LPTIM2
-      - OUTPUTXBAR1
+      - EPWM1_B:Y
+      - LPTIM2:Y
+      - OUTPUTXBAR1:Y
+    modes:
+      - GPIO:1
   PB1:
     position: 3
     type: I/O
     signals:
-      - GPIO2
-      - EPWM2_A
-      - LPTIM1
+      - EPWM2_A:Y
+      - LPTIM1:Y
+    modes:
+      - GPIO:2
   PA23:
     position: 4
     type: I/O
     signals:
-      - GPIO3
-      - EPWM2_B
-      - SPI1_SIN
-      - SPI1_SOUT
+      - EPWM2_B:Y
+      - SPI1_SIN:Y
+      - SPI1_SOUT:Y
+    modes:
+      - GPIO:3
   PB10:
     position: 5
     type: I/O
     signals:
-      - GPIO4
-      - EPWM3_A
-      - LPTIM0
+      - EPWM3_A:Y
+      - LPTIM0:Y
+    modes:
+      - GPIO:4
   PB11:
     position: 6
     type: I/O
     signals:
-      - GPIO5
-      - EPWM3_B
+      - EPWM3_B:Y
+    modes:
+      - GPIO:5
   VDD0:
     position: 7
     type: I/O
     signals:
-      - GPIO6
-      - EPWM4_A
-      - SYNCOUT
-      - OUTPUTXBAR2
+      - EPWM4_A:Y
+      - SYNCOUT:Y
+      - OUTPUTXBAR2:Y
+    modes:
+      - GPIO:6
   VSS50_ANA1:
     position: 8
     type: I/O
     signals:
-      - GPIO7
-      - EPWM4_B
-      - SCI1_RX
+      - EPWM4_B:Y
+      - SCI1_RX:Y
+    modes:
+      - GPIO:7
   GND1:
     position: 9
     type: I/O
     signals:
-      - GPIO8
-      - EPWM5_A
-      - ADCSOCAO
+      - EPWM5_A:Y
+      - ADCSOCAO:Y
+    modes:
+      - GPIO:8
   XRS:
     position: 10
     type: I/O
     signals:
-      - GPIO9
-      - EPWM5_B
-      - SCI1_TX
+      - EPWM5_B:Y
+      - SCI1_TX:Y
+    modes:
+      - GPIO:9
   PB13:
     position: 11
     type: I/O
     signals:
-      - GPIO10
-      - EPWM6_A
-      - ADCSOCBO
-      - CLKOUT
+      - EPWM6_A:Y
+      - ADCSOCBO:Y
+      - CLKOUT:Y
+    modes:
+      - GPIO:10
   ADCINA7:
     position: 12
     type: I/O
     signals:
-      - GPIO11
-      - EPWM6_B
-      - SCI2_RX
+      - EPWM6_B:Y
+      - SCI2_RX:Y
+    modes:
+      - GPIO:11
   PB14:
     position: 13
     type: I/O
     signals:
-      - GPIO12
-      - SCI2_TX
-      - SPI2_SIN
-      - OUTPUTXBAR3
-      - SPI2_SOUT
+      - SCI2_TX:Y
+      - SPI2_SIN:Y
+      - OUTPUTXBAR3:Y
+      - SPI2_SOUT:Y
+    modes:
+      - GPIO:12
   PB15:
     position: 14
     type: I/O
     signals:
-      - GPIO13
-      - MCAN1_CLK
-      - MCAN2_TX0
-      - SPI2_SOUT
-      - OUTPUTXBAR4
-      - SPI2_SIN
+      - MCAN1_CLK:Y
+      - MCAN2_TX0:Y
+      - SPI2_SOUT:Y
+      - OUTPUTXBAR4:Y
+      - SPI2_SIN:Y
+    modes:
+      - GPIO:13
   PB16:
     position: 15
     type: I/O
     signals:
-      - GPIO14
-      - SCI3_TX
-      - SPI2_CLK
-      - OUTPUTXBAR5
+      - SCI3_TX:Y
+      - SPI2_CLK:Y
+      - OUTPUTXBAR5:Y
+    modes:
+      - GPIO:14
   PB17:
     position: 16
     type: I/O
     signals:
-      - GPIO15
-      - SCI3_RX
-      - SPI2_CS0
-      - OUTPUTXBAR6
-      - SPI1_CS0
+      - SCI3_RX:Y
+      - SPI2_CS0:Y
+      - OUTPUTXBAR6:Y
+      - SPI1_CS0:Y
+    modes:
+      - GPIO:15
   PB18:
     position: 17
     type: I/O
     signals:
-      - GPIO16
-      - SPI1_SIN
-      - SPI1_SOUT
-      - OUTPUTXBAR7
-      - SCI1_RX
+      - SPI1_SIN:Y
+      - SPI1_SOUT:Y
+      - OUTPUTXBAR7:Y
+      - SCI1_RX:Y
+    modes:
+      - GPIO:16
   PB19:
     position: 18
     type: I/O
     signals:
-      - GPIO17
-      - SPI1_SOUT
-      - SPI1_SIN
-      - OUTPUTXBAR8
-      - SCI1_TX
+      - SPI1_SOUT:Y
+      - SPI1_SIN:Y
+      - OUTPUTXBAR8:Y
+      - SCI1_TX:Y
+    modes:
+      - GPIO:17
   PB20:
     position: 19
     type: I/O
     signals:
-      - GPIO18
-      - SPI1_CLK
-      - MCAN1_CLK
-      - XCLKOUT
-      - SYNCOUT
+      - SPI1_CLK:Y
+      - MCAN1_CLK:Y
+      - XCLKOUT:Y
+      - SYNCOUT:Y
+    modes:
+      - GPIO:18
   ADC_VREFP:
     position: 20
     type: I/O
     signals:
-      - GPIO19
-      - XCLKIN
-      - SPI1_CS0
-      - SCI4_RX
+      - XCLKIN:Y
+      - SPI1_CS0:Y
+      - SCI4_RX:Y
+    modes:
+      - GPIO:19
   VDDA:
     position: 21
     type: I/O
     signals:
-      - GPIO20
-      - EQEP1A
-      - OUTPUTXBAR1
+      - EQEP1A:Y
+      - OUTPUTXBAR1:Y
+    modes:
+      - GPIO:20
   VSSA:
     position: 22
     type: I/O
     signals:
-      - GPIO21
-      - EQEP1B
-      - COMP1OUT2
-      - OUTPUTXBAR2
+      - EQEP1B:Y
+      - COMP1OUT2:Y
+      - OUTPUTXBAR2:Y
+    modes:
+      - GPIO:21
   ADC_VREFN:
     position: 23
     type: I/O
     signals:
-      - GPIO22
-      - EQEP1S
-      - SCI5_TX
-      - SPI1_CS1
+      - EQEP1S:Y
+      - SCI5_TX:Y
+      - SPI1_CS1:Y
+    modes:
+      - GPIO:22
   PB27:
     position: 24
     type: I/O
     signals:
-      - GPIO23
-      - EQEP1I
-      - SCI5_RX
-      - SPI1_CS2
+      - EQEP1I:Y
+      - SCI5_RX:Y
+      - SPI1_CS2:Y
+    modes:
+      - GPIO:23
   PB26:
     position: 25
     type: I/O
     signals:
-      - GPIO24
-      - SPI2_SOUT
-      - SPI2_SIN
-      - EWM_IN
+      - SPI2_SOUT:Y
+      - SPI2_SIN:Y
+      - EWM_IN:Y
+    modes:
+      - GPIO:24
   PB25:
     position: 26
     type: I/O
     signals:
-      - GPIO25
-      - SPI2_SIN
-      - SPI2_SOUT
-      - SCI1_CTS
-      - SCI4_CTS
+      - SPI2_SIN:Y
+      - SPI2_SOUT:Y
+      - SCI1_CTS:Y
+      - SCI4_CTS:Y
+    modes:
+      - GPIO:25
   PB24:
     position: 27
     type: I/O
     signals:
-      - GPIO26
-      - SPI2_CLK
-      - SCI1_RTS
-      - SCI4_RTS
+      - SPI2_CLK:Y
+      - SCI1_RTS:Y
+      - SCI4_RTS:Y
+    modes:
+      - GPIO:26
   PB23:
     position: 28
     type: I/O
     signals:
-      - GPIO27
-      - SPI2_CS0
-      - I2C1_DAT
+      - SPI2_CS0:Y
+      - I2C1_DAT:Y
+    modes:
+      - GPIO:27
   PB22:
     position: 29
     type: I/O
     signals:
-      - GPIO28
-      - SCI6_RX
-      - I2C2_DAT
-      - OUTPUTXBAR5
+      - SCI6_RX:Y
+      - I2C2_DAT:Y
+      - OUTPUTXBAR5:Y
+    modes:
+      - GPIO:28
   PB21:
     position: 30
     type: I/O
     signals:
-      - GPIO29
-      - SCI6_TX
-      - I2C2_CLK
-      - OUTPUTXBAR4
-      - SPI4_SIN
+      - SCI6_TX:Y
+      - I2C2_CLK:Y
+      - OUTPUTXBAR4:Y
+      - SPI4_SIN:Y
+    modes:
+      - GPIO:29
   ADCINB7:
     position: 31
     type: I/O
     signals:
-      - GPIO30
-      - MCAN1_RX
-      - SD2_C4
-      - SPI4_SOUT
+      - MCAN1_RX:Y
+      - SD2_C4:Y
+      - SPI4_SOUT:Y
+    modes:
+      - GPIO:30
   VREF0P8TEST:
     position: 32
     type: I/O
     signals:
-      - GPIO31
-      - MCAN1_TX0
-      - SD2_D4
-      - SPI4_CLK
+      - MCAN1_TX0:Y
+      - SD2_D4:Y
+      - SPI4_CLK:Y
+    modes:
+      - GPIO:31
   PA27:
     position: 33
     type: I/O
     signals:
-      - GPIO32
-      - I2C1_DAT
-      - ADCSOCAO
-      - OUTPUTXBAR5
-      - SPI4_CS
+      - I2C1_DAT:Y
+      - ADCSOCAO:Y
+      - OUTPUTXBAR5:Y
+      - SPI4_CS:Y
+    modes:
+      - GPIO:32
   PA31:
     position: 34
     type: I/O
     signals:
-      - GPIO33
-      - I2C1_CLK
-      - SYNCOUT
-      - ADCSOCBO
-      - OUTPUTXBAR6
-      - SCI2_CTS
+      - I2C1_CLK:Y
+      - SYNCOUT:Y
+      - ADCSOCBO:Y
+      - OUTPUTXBAR6:Y
+      - SCI2_CTS:Y
+    modes:
+      - GPIO:33
   PA30:
     position: 35
     type: I/O
     signals:
-      - GPIO34
-      - MCAN1_TX1
-      - OUTPUTXBAR7
-      - SCI2_RTS
+      - MCAN1_TX1:Y
+      - OUTPUTXBAR7:Y
+      - SCI2_RTS:Y
+    modes:
+      - GPIO:34
   PA29:
     position: 36
     type: I/O
     signals:
-      - TDI
-      - GPIO35
-      - SPI3_SOUT
-      - SPI3_SIN
-      - OUTPUTXBAR3
+      - TDI:Y
+      - SPI3_SOUT:Y
+      - SPI3_SIN:Y
+      - OUTPUTXBAR3:Y
+    modes:
+      - GPIO:35
   GND2:
     position: 37
     type: I/O
     signals:
-      - TMS 
-      - GPIO36
-      - SPI1_CS3
+      - TMS:Y
+      - SPI1_CS3:Y
+    modes:
+      - GPIO:36
   VDDIO1:
     position: 38
     type: I/O
     signals:
-      - TDO
-      - GPIO37
-      - SPI3_SIN
-      - SPI3_SOUT
-      - OUTPUTXBAR4
-      - SYNCOUT
+      - TDO:Y
+      - SPI3_SIN:Y
+      - SPI3_SOUT:Y
+      - OUTPUTXBAR4:Y
+      - SYNCOUT:Y
+    modes:
+      - GPIO:37
   PA26:
     position: 39
     type: I/O
     signals:
-      - TCK
-      - GPIO38
-      - OUTPUTXBAR8
+      - TCK:Y
+      - OUTPUTXBAR8:Y
+    modes:
+      - GPIO:38
   PA9:
     position: 40
     type: I/O
     signals:
-      - GPIO39
-      - SPI3_CS0
-      - SD2_C2
-      - I2C1_CLK
-      - EWM_OUT_b
+      - SPI3_CS0:Y
+      - SD2_C2:Y
+      - I2C1_CLK:Y
+      - EWM_OUT_b:Y
+    modes:
+      - GPIO:39
   PA28:
     position: 41
     type: I/O
     signals:
-      - GPIO40
-      - EPWM7_A
-      - SD2_D2
-      - EQEP2S
-      - SPI1_SIN
+      - EPWM7_A:Y
+      - SD2_D2:Y
+      - EQEP2S:Y
+      - SPI1_SIN:Y
+    modes:
+      - GPIO:40
   CP_EXT_TEST:
     position: 42
     type: I/O
     signals:
-      - GPIO41
-      - EPWM7_B
-      - SD2_C3
-      - EQEP2I
-      - SPI1_SOUT
+      - EPWM7_B:Y
+      - SD2_C3:Y
+      - EQEP2I:Y
+      - SPI1_SOUT:Y
+    modes:
+      - GPIO:41
   PA18:
     position: 43
     type: I/O
     signals:
-      - GPIO42
-      - COMP1OUT1
-      - MCAN2_TX0
-      - SD2_D3
-      - OUTPUTXBAR1
-      - SPI1_CLK
+      - COMP1OUT1:Y
+      - MCAN2_TX0:Y
+      - SD2_D3:Y
+      - OUTPUTXBAR1:Y
+      - SPI1_CLK:Y
+    modes:
+      - GPIO:42
   PA17:
     position: 44
     type: I/O
     signals:
-      - GPIO43
-      - COMP1OUT2
-      - MCAN2_RX
-      - OUTPUTXBAR2
-      - SPI1_CS0
+      - COMP1OUT2:Y
+      - MCAN2_RX:Y
+      - OUTPUTXBAR2:Y
+      - SPI1_CS0:Y
+    modes:
+      - GPIO:43
   PA8:
     position: 45
     type: I/O
     signals:
-      - GPIO44
-      - SPI3_CLK
-      - EQEP2B
-      - SCI3_RTS
+      - SPI3_CLK:Y
+      - EQEP2B:Y
+      - SCI3_RTS:Y
+    modes:
+      - GPIO:44
   PA25:
     position: 46
     type: I/O
     signals:
-      - GPIO45
-      - TRST
-      - EQEP2A
-      - SCI3_CTS
+      - TRST:Y
+      - EQEP2A:Y
+      - SCI3_CTS:Y
+    modes:
+      - GPIO:45
   PB12:
     position: 47
     type: I/O
     signals:
-      - GPIO46
-      - SD1_D1
-      - ADCINA6
-      - ADCINC14
-      - MCAN2_TX1
+      - SD1_D1:Y
+      - ADCINA6:Y
+      - ADCINC14:Y
+      - MCAN2_TX1:Y
+    modes:
+      - GPIO:46
   PA16:
     position: 48
     type: I/O
+    signals:
+      - MCAN2_CLK:Y
+      - ADCINA5:Y
+      - ADCINC13:Y
     modes:
-      - GPIO47
-      - MCAN2_CLK
-      - ADCINA5
-      - ADCINC13
+      - GPIO:47
   PA12:
     position: 49
     type: I/O
     signals:
-      - GPIO48
-      - ADCINA4
-      - ADCINC12
-      - COMP2A
+      - ADCINA4:Y
+      - ADCINC12:Y
+      - COMP2A:Y
+    modes:
+      - GPIO:48
   PB9:
     position: 50
     type: I/O
     signals:
-      - GPIO49
-      - SD1_D2
-      - ADCINA3
-      - ADCINC11
+      - SD1_D2:Y
+      - ADCINA3:Y
+      - ADCINC11:Y
+    modes:
+      - GPIO:49
   FLASH_VPP:
     position: 51
     type: I/O
     signals:
-      - GPIO50
-      - ADCINA2
-      - ADCINC10
-      - COMP1A
+      - ADCINA2:Y
+      - ADCINC10:Y
+      - COMP1A:Y
+    modes:
+      - GPIO:50
   PA7:
     position: 52
     type: I/O
     signals:
-      - GPIO51
-      - SD1_C2
-      - ADCINA1
-      - ADCINC9
+      - SD1_C2:Y
+      - ADCINA1:Y
+      - ADCINC9:Y
+    modes:
+      - GPIO:51
   PA6:
     position: 53
     type: I/O
     signals:
-      - GPIO52
-      - SD1_C3
-      - ADCINA0
-      - ADCINC8
+      - SD1_C3:Y
+      - ADCINA0:Y
+      - ADCINC8:Y
+    modes:
+      - GPIO:52
   XOSC16M_OUT:
     position: 54
     type: I/O
     signals:
-      - GPIO53
-      - SD1_C3
-      - ADCINB6
-      - ADCINC6
+      - SD1_C3:Y
+      - ADCINB6:Y
+      - ADCINC6:Y
+    modes:
+      - GPIO:53
   XOSC16M_IN:
     position: 55
     type: I/O
     signals:
-      - GPIO54
-      - SD1_D4
-      - ADCINB5
-      - ADCINC5
+      - SD1_D4:Y
+      - ADCINB5:Y
+      - ADCINC5:Y
+    modes:
+      - GPIO:54
   VSS50_ANA2:
     position: 56
     type: I/O
     signals:
-      - GPIO55
-      - ADCINB4
-      - ADCINC4
-      - COMP2B
+      - ADCINB4:Y
+      - ADCINC4:Y
+      - COMP2B:Y
+    modes:
+      - GPIO:55
   GND3:
     position: 57
     type: I/O
     signals:
-      - GPIO56
-      - SD1_C4
-      - ADCINB3
-      - ADCINC3
+      - SD1_C4:Y
+      - ADCINB3:Y
+      - ADCINC3:Y
+    modes:
+      - GPIO:56
   VDD1:
     position: 58
     type: I/O
     signals:
-      - GPIO57
-      - ADCINB2
-      - ADCINC2
+      - ADCINB2:Y
+      - ADCINC2:Y
+    modes:
+      - GPIO:57
   PA19:
     position: 59
     type: I/O
     signals:
-      - GPIO58
-      - SD2_C1
-      - ADCINB1
-      - ADCINC1
+      - SD2_C1:Y
+      - ADCINB1:Y
+      - ADCINC1:Y
+    modes:
+      - GPIO:58
   PB7:
     position: 60
     type: I/O
     signals:
-      - GPIO59
-      - SD2_D1
-      - ADCINB0
-      - ADCINC0
+      - SD2_D1:Y
+      - ADCINB0:Y
+      - ADCINC0:Y
+    modes:
+      - GPIO:59
   VSS50_ANA3:
     position: 61
     type: I/O
-    signals:
-      - GPIO60
+    modes:
+      - GPIO:60
   PB6:
     position: 62
     type: I/O
-    signals:
-      - GPIO61
+    modes:
+      - GPIO:61
   PB5:
     position: 63
     type: I/O
-    signals:
-      - GPIO62
+    modes:
+      - GPIO:62
   PB3:
     position: 64
     type: I/O
-    signals:
-      - GPIO63
+    modes:
+      - GPIO:63
   PB4:
     position: 65
     type: I/O
-    signals:
-      - GPIO64
+    modes:
+      - GPIO:64
   VSS50_ANA4:
     position: 66
     type: I/O
-    signals:
-      - GPIO65
+    modes:
+      - GPIO:65
   VSS50_ANA5:
     position: 67
     type: I/O
-    signals:
-      - GPIO66
+    modes:
+      - GPIO:66
   MPW_EXT_TEST:
     position: 68
     type: I/O
-    signals:
-      - GPIO67
+    modes:
+      - GPIO:67
   PB30:
     position: 69
     type: I/O
-    signals:
-      - GPIO68
+    modes:
+      - GPIO:68
   PB29:
     position: 70
     type: I/O
-    signals:
-      - GPIO69
+    modes:
+      - GPIO:69
   PA11:
     position: 71
     type: I/O
-    signals:
-      - GPIO70
+    modes:
+      - GPIO:70
   PA5:
     position: 72
     type: I/O
-    signals:
-      - GPIO71
+    modes:
+      - GPIO:71
   PA4:
     position: 73
     type: I/O
-    signals:
-      - GPIO72
+    modes:
+      - GPIO:72
   PB8:
     position: 74
     type: I/O
-    signals:
-      - GPIO73
+    modes:
+      - GPIO:73
   PA10:
     position: 75
     type: I/O
-    signals:
-      - GPIO74
+    modes:
+      - GPIO:74
   PA3:
     position: 76
     type: I/O
-    signals:
-      - GPIO75
+    modes:
+      - GPIO:75
   PA2:
     position: 77
     type: I/O
-    signals:
-      - GPIO76
+    modes:
+      - GPIO:76
   PA1:
     position: 78
     type: I/O
-    signals:
-      - GPIO77
+    modes:
+      - GPIO:77
   PA0:
     position: 79
     type: I/O
-    signals:
-      - GPIO78
+    modes:
+      - GPIO:78
   VDD50_ANA:
     position: 80
     type: I/O
-    signals:
-      - GPIO79
+    modes:
+      - GPIO:79
   VDDIO2:
     position: 81
     type: I/O
-    signals:
-      - GPIO80
+    modes:
+      - GPIO:80
   GND4:
     position: 82
     type: I/O
-    signals:
-      - GPIO81
+    modes:
+      - GPIO:81
   VDD2:
     position: 83
     type: I/O
-    signals:
-      - GPIO82
+    modes:
+      - GPIO:82
   PB28:
     position: 84
     type: I/O
-    signals:
-      - GPIO83
+    modes:
+      - GPIO:83
   PB2:
     position: 85
     type: I/O
-    signals:
-      - GPIO84
+    modes:
+      - GPIO:84
   PA15:
     position: 86
     type: I/O
-    signals:
-      - GPIO85
+    modes:
+      - GPIO:85
   PA13:
     position: 87
     type: I/O
-    signals:
-      - GPIO86
+    modes:
+      - GPIO:86
   PA14:
     position: 88
     type: I/O
-    signals:
-      - GPIO87
+    modes:
+      - GPIO:87
   PA20:
     position: 89
     type: I/O
-    signals:
-      - GPIO88
+    modes:
+      - GPIO:88
   PA21:
     position: 90
     type: I/O
-    signals:
-      - GPIO89
+    modes:
+      - GPIO:89
   PA24:
     position: 91
     type: I/O
-    signals:
-      - GPIO90
+    modes:
+      - GPIO:90
