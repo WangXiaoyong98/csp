@@ -66,6 +66,7 @@ export class Pin {
       mode: this._project.configs.get(this._modePath, ''),
       label: this._project.configs.get(this._labelPath, ''),
       locked: this._project.configs.get(this._lockedPath, false),
+      position: this.position,
     })
 
     this._project.configs.emitter.on('changed', this._onProjectConfigsChanged.bind(this))
@@ -167,6 +168,7 @@ export class Pin {
       function: func,
       mode,
       label: this.label.value,
+      position: this.position,
     })
   }
 
@@ -177,6 +179,7 @@ export class Pin {
       function: '',
       mode: '',
       label: this.label.value,
+      position: this.position,
     })
   }
 
@@ -201,6 +204,7 @@ export class Pin {
       this._item.mode = value.mode ?? ''
       this._item.label = value.label ?? ''
       this._item.locked = value.locked ?? false
+      this._item.position = value.position ?? this.position
     }
   }
 }

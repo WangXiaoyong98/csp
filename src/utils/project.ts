@@ -240,6 +240,7 @@ export interface ProjectConfigsPinUnitType {
   function?: string
   mode?: string
   locked?: boolean
+  position?: number
 }
 
 export class ProjectConfigs {
