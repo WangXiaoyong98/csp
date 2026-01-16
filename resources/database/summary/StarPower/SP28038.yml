@@ -169,7 +169,7 @@ builders:
   CMake:
     v3.7: [gcc-arm-none-eabi]
   MDK-Arm:
-    v5.27: [default]
+    v5.41.0.0: [default]
 linker:
   defaultHeapSize: "0x200"
   defaultStackSize: "0x400"
