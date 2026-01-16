@@ -159,7 +159,7 @@ modules:
         CRC:
           define: sp28038_crc
   middlewares: {}
-package: LQFP100
+package: LQFP80
 url:
   en: https://global.geehy.com/product/fifth/APM32F103
   zh-cn: https://geehy.com/product/fifth/APM32F103
@@ -169,7 +169,7 @@ builders:
   CMake:
     v3.7: [gcc-arm-none-eabi]
   MDK-Arm:
-    v5.41.0.0: [default]
+    v5.41: [default]
 linker:
   defaultHeapSize: "0x200"
   defaultStackSize: "0x400"
