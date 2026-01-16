@@ -441,6 +441,12 @@ class Coder:
         includes_content = ";".join(includes)
         include_node.text = includes_content
 
+        # update scatter file path
+        scatter_node = tree.find("Targets/Target/TargetOption/TargetArmAds/LDads/ScatterFile")
+        if scatter_node is not None:
+            # Update scatter file path to point to the correct location
+            scatter_node.text = "hal/libraries/cmsis/device/arm/SP28038_flash.scf"
+
         # files
         pre_files_group = {}
         groups_node: etree.Element = tree.find("Targets/Target/Groups")  # type: ignore
