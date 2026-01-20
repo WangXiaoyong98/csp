@@ -179,7 +179,9 @@ pins:
     type: I/O
     signals:
       - EQEP1S:Y
+      - COMP3_OUT:Y
       - SCI5_TX:Y
+      - SCI3_TX:Y
       - SPI1_CS1:Y
     modes:
       - GPIO:22
@@ -187,7 +189,7 @@ pins:
     position: 2
     type: I/O
     signals:
-      - I2C1_DAT:Y
+      - I2C1_SDA:Y
       - ADCSOCAO:Y
       - OUTPUTXBAR5:Y
       - SPI4_CS:Y
@@ -209,6 +211,7 @@ pins:
     type: I/O
     signals:
       - EQEP1I:Y
+      - SCI3_RX:Y
       - SCI5_RX:Y
       - SPI1_CS2:Y
     modes:
@@ -270,6 +273,7 @@ pins:
     type: I/O
     signals:
       - MCAN2_CLK:Y
+      - SD1_C1:Y
       - ADCINA5:Y
       - ADCINC13:Y
     modes:
@@ -288,6 +292,7 @@ pins:
     type: I/O
     signals:
       - SD1_D2:Y
+      - I2C2_SDA:Y
       - ADCINA3:Y
       - ADCINC11:Y
     modes:
@@ -296,6 +301,7 @@ pins:
     position: 16
     type: I/O
     signals:
+      - I2C3_SDA:Y
       - ADCINA2:Y
       - ADCINC10:Y
       - COMP1A:Y
@@ -306,6 +312,7 @@ pins:
     type: I/O
     signals:
       - SD1_C2:Y
+      - I2C3_SCL:Y
       - ADCINA1:Y
       - ADCINC9:Y
     modes:
@@ -315,6 +322,7 @@ pins:
     type: I/O
     signals:
       - SD1_D3:Y
+      - I2C3_SDA:Y
       - ADCINA0:Y
       - ADCINC8:Y
     modes:
@@ -355,6 +363,7 @@ pins:
     signals:
       - ADCINB2:Y
       - ADCINC2:Y
+      - COMP1B:Y
     modes:
       - GPIO:57
   GPIO56:
@@ -380,6 +389,7 @@ pins:
     type: I/O
     signals:
       - SD1_D4:Y
+      - I2C3_CUR:Y
       - ADCINB5:Y
       - ADCINC5:Y
     modes:
@@ -389,6 +399,7 @@ pins:
     type: I/O
     signals:
       - SD1_C3:Y
+      - I2C3_SCL:Y
       - ADCINB6:Y
       - ADCINC6:Y
     modes:
@@ -401,7 +412,7 @@ pins:
     type: I/O
     signals:
       - SPI2_CS0:Y
-      - I2C1_DAT:Y
+      - I2C1_SDA:Y
     modes:
       - GPIO:27
   GPIO31:
@@ -418,7 +429,9 @@ pins:
     type: I/O
     signals:
       - MCAN1_RX:Y
+      - I2C3_CLK:Y
       - SD2_C4:Y
+      - SPI4_SIN:Y
       - SPI4_SOUT:Y
     modes:
       - GPIO:30
@@ -428,8 +441,11 @@ pins:
     signals:
       - SCI6_TX:Y
       - I2C2_CLK:Y
+      - SPI4_SOUT:Y
       - OUTPUTXBAR4:Y
       - SPI4_SIN:Y
+      - SCI4_TX:Y
+      - COMP3A:Y
     modes:
       - GPIO:29
   VSS2:
@@ -442,6 +458,8 @@ pins:
     position: 37
     type: I/O
     signals:
+      - SPI2_CLK:Y
+      - I2C3_SDA:Y
       - SPI2_CLK:Y
       - SCI1_RTS:Y
       - SCI4_RTS:Y
@@ -463,8 +481,10 @@ pins:
     type: I/O
     signals:
       - SCI6_RX:Y
-      - I2C2_DAT:Y
-      - OUTPUTXBAR5:Y
+      - I2C2_SDA:Y
+      - SCI4_RX:Y
+      - COMP3B:Y
+      - OUTPUTXBAR3:Y
     modes:
       - GPIO:28
   GPIO18:
@@ -472,9 +492,8 @@ pins:
     type: I/O
     signals:
       - SPI1_CLK:Y
-      - MCAN1_CLK:Y
+      - SCI4_TX:Y
       - XCLKOUT:Y
-      - SYNCOUT:Y
     modes:
       - GPIO:18
   GPIO17:
@@ -503,6 +522,7 @@ pins:
       - SPI2_SOUT:Y
       - SCI1_CTS:Y
       - SCI4_CTS:Y
+      - I2C2_SDA:Y
     modes:
       - GPIO:25
   GPIO44:
@@ -512,6 +532,7 @@ pins:
       - SPI3_CLK:Y
       - EQEP2B:Y
       - SCI3_RTS:Y
+      - MCAN2_TX0:Y
     modes:
       - GPIO:44
   GPIO16:
@@ -532,6 +553,7 @@ pins:
       - SPI2_SIN:Y
       - OUTPUTXBAR3:Y
       - SPI2_SOUT:Y
+      - EPWM7_A:Y
     modes:
       - GPIO:12
   GPIO41:
@@ -541,6 +563,7 @@ pins:
       - EPWM7_B:Y
       - SD2_C3:Y
       - EQEP2I:Y
+      - SPI1_SIN:Y
       - SPI1_SOUT:Y
     modes:
       - GPIO:41
@@ -549,8 +572,11 @@ pins:
     type: I/O
     signals:
       - EPWM4_A:Y
+      - VDT1_OUT:Y
       - SYNCOUT:Y
       - OUTPUTXBAR2:Y
+      - VDT2_OUT:Y
+      - TDT1_TEST_OUT:Y
     modes:
       - GPIO:6
   GPIO7:
@@ -559,6 +585,9 @@ pins:
     signals:
       - EPWM4_B:Y
       - SCI1_RX:Y
+      - COMP1_OUT:Y
+      - COMP2_OUT:Y
+      - COMP3_OUT:Y
     modes:
       - GPIO:7
   X2:
@@ -589,7 +618,7 @@ pins:
       - SPI3_CS0:Y
       - SD2_C2:Y
       - I2C1_CLK:Y
-      - EWM_OUT_b:Y
+      - EWM_OUT_B:Y
     modes:
       - GPIO:39
   GPIO38:
@@ -597,6 +626,7 @@ pins:
     type: I/O
     signals:
       - TCK:Y
+      - UART2_TX:Y
       - OUTPUTXBAR8:Y
     modes:
       - GPIO:38
@@ -608,7 +638,6 @@ pins:
       - SPI3_SIN:Y
       - SPI3_SOUT:Y
       - OUTPUTXBAR4:Y
-      - SYNCOUT:Y
     modes:
       - GPIO:37
   GPIO35:
@@ -626,6 +655,7 @@ pins:
     type: I/O
     signals:
       - TMS:Y
+      - SCI2_RX:Y
       - SPI1_CS3:Y
     modes:
       - GPIO:36
@@ -642,6 +672,8 @@ pins:
     type: I/O
     signals:
       - EPWM3_B:Y
+      - SPI1_SOUT:Y
+      - SPI1_SIN:Y
     modes:
       - GPIO:5
   GPIO4:
@@ -657,6 +689,7 @@ pins:
     type: I/O
     signals:
       - EPWM7_A:Y
+      - SPI1_SOUT:Y
       - SD2_D2:Y
       - EQEP2S:Y
       - SPI1_SIN:Y
@@ -685,7 +718,7 @@ pins:
     type: I/O
     signals:
       - EPWM2_A:Y
-      - LPTIM1:Y
+      - LPTIM_1:Y
     modes:
       - GPIO:2
   GPIO1:
@@ -693,7 +726,8 @@ pins:
     type: I/O
     signals:
       - EPWM1_B:Y
-      - LPTIM2:Y
+      - LPTIM_2:Y
+      - COMP1_OUT:Y
       - OUTPUTXBAR1:Y
     modes:
       - GPIO:1
@@ -702,7 +736,7 @@ pins:
     type: I/O
     signals:
       - EPWM1_A:Y
-      - LPTIM3:Y
+      - LPTIM_3:Y
     modes:
       - GPIO:0
   VDDIO2:
@@ -721,6 +755,8 @@ pins:
     position: 74
     type: I/O
     signals:
+      - MCAN1_TX1:Y
+      - COMP2OUT:Y
       - MCAN1_TX1:Y
       - OUTPUTXBAR7:Y
       - SCI2_RTS:Y
@@ -761,6 +797,8 @@ pins:
     type: I/O
     signals:
       - EQEP1A:Y
+      - COMP1_OUT:Y
+      - EPWM7_B:Y
       - OUTPUTXBAR1:Y
     modes:
       - GPIO:20
@@ -769,7 +807,7 @@ pins:
     type: I/O
     signals:
       - EQEP1B:Y
-      - COMP1OUT2:Y
+      - COMP2_OUT:Y
       - OUTPUTXBAR2:Y
     modes:
       - GPIO:21
@@ -780,5 +818,6 @@ pins:
       - SPI2_SOUT:Y
       - SPI2_SIN:Y
       - EWM_IN:Y
+      - I2C2_SCL:Y
     modes:
       - GPIO:24
