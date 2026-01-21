@@ -200,7 +200,6 @@ pins:
     type: I/O
     signals:
       - I2C1_CLK:Y
-      - SYNCOUT:Y
       - ADCSOCBO:Y
       - OUTPUTXBAR6:Y
       - SCI2_CTS:Y
