@@ -626,7 +626,7 @@ pins:
     type: I/O
     signals:
       - TCK:Y
-      - UART2_TX:Y
+      - SCI2_TX:Y
       - OUTPUTXBAR8:Y
     modes:
       - GPIO:38
