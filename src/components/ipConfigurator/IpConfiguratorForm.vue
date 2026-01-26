@@ -86,6 +86,16 @@ const refParameters = computed((): Record<string, IpRefParameter> => {
       rtn = currentIp.value.containers.configurations.refParameters.value
     }
     else if (props.type === 'channel') {
+      // 检查引脚的功能是否为 GPIO
+      const parts = props.instance.split('@')
+      if (parts.length === 2) {
+        const pinName = parts[1]
+        const pin = pins[pinName]
+        if (pin && pin.function.value && !pin.function.value.startsWith('GPIO:')) {
+          // 如果引脚的功能不是 GPIO，则返回空对象
+          return {}
+        }
+      }
       rtn = channelRefParameters.value?.value ?? {}
     }
   }

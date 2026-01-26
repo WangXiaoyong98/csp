@@ -135,12 +135,16 @@ function createModels(ip: Ip): ModelType[] {
   if (ip.instance === summary.pinInstance) {
     const names = Object.keys(project.configs.get('pins', {}))
     for (const name of names) {
-      ms.push({
-        name,
-        key: name,
-        refParameters: pins[name].refParameters.value,
-        pin: pins[name],
-      })
+      const pin = pins[name]
+      // 只显示功能为 GPIO 的引脚
+      if (!pin.function.value || pin.function.value.startsWith('GPIO:')) {
+        ms.push({
+          name,
+          key: name,
+          refParameters: pin.refParameters.value,
+          pin: pin,
+        })
+      }
     }
   }
 
