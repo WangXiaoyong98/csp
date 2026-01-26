@@ -157,10 +157,7 @@ parameters:
 presets:
   Input:
     refParameters:
-      gpio_direction_t:
-        values:
-          - input
-        default: input
+      gpio_direction_t: {}
       gpio_pin_type_t: {}
       gpio_qualification_mode_t: {}
       gpio_filter_clock_source_t: {}
@@ -168,10 +165,7 @@ presets:
       gpio_lock_port_t: {}
   Output:
     refParameters:
-      gpio_direction_t:
-        values:
-          - output
-        default: output
+      gpio_direction_t: {}
       gpio_pin_type_t: {}
       gpio_qualification_mode_t: {}
       gpio_filter_clock_source_t: {}

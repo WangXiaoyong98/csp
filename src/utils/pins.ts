@@ -98,12 +98,10 @@ export class Pin {
     const key = this.mode.value || this.function.value
     if (key && key.includes(':')) {
       const parts = key.split(':')
-      // 对于 GPIO 功能，根据 GPIO 方向返回对应的预设模式
+      // 对于 GPIO 功能，直接返回一个固定的预设名称
+      // 这样不管选择输入还是输出，都会显示所有配置选项
       if (parts[0] === 'GPIO') {
-        // 获取当前的 GPIO 方向值
-        const directionValue = this._project.configs.get(`${this._ipPath}.gpio_direction_t`, 'input')
-        // 根据方向值返回对应的预设名称
-        return directionValue === 'output' ? 'Output' : 'Input'
+        return 'Input'
       }
       return parts[1]
     }
