@@ -178,22 +178,67 @@ onBeforeUnmount(() => {
               :placeholder="$t('label.pleaseSelect')"
               :disabled="refParameter.readonly.value"
             >
-              <el-option
-                v-for="[key, value] in Object.entries(refParameter.values.value)"
-                :key="key"
-                :value="key"
-                :label="value.comment.value"
-                :disabled="!value.valid.value.isEnabled"
-              >
-                <el-tooltip
-                  :disabled="value.valid.value.isEnabled"
-                  :content="value.valid.value.reason"
-                  placement="right"
-                  popper-class="g-tooltip-with-newline"
+              <!-- 处理GPIO引脚类型的特殊情况，根据方向动态显示选项 -->
+              <template v-if="refParameter.name === 'gpio_pin_type_t'">
+                <!-- 获取GPIO方向值 -->
+                <template v-if="Object.keys(refParameters).includes('gpio_direction_t')">
+                  <el-option
+                    v-for="[key, value] in Object.entries(refParameter.values.value)"
+                    :key="key"
+                    :value="key"
+                    :label="value.comment.value"
+                    :disabled="!value.valid.value.isEnabled || 
+                              (refParameters.gpio_direction_t.parameter.value.value.value === 'output' && !['push_pull', 'open_drain'].includes(key)) ||
+                              (refParameters.gpio_direction_t.parameter.value.value.value === 'input' && !['pullup', 'pulldown'].includes(key))"
+                  >
+                    <el-tooltip
+                      :disabled="value.valid.value.isEnabled"
+                      :content="value.valid.value.reason"
+                      placement="right"
+                      popper-class="g-tooltip-with-newline"
+                    >
+                      {{ value.comment.value }}
+                    </el-tooltip>
+                  </el-option>
+                </template>
+                <template v-else>
+                  <el-option
+                    v-for="[key, value] in Object.entries(refParameter.values.value)"
+                    :key="key"
+                    :value="key"
+                    :label="value.comment.value"
+                    :disabled="!value.valid.value.isEnabled"
+                  >
+                    <el-tooltip
+                      :disabled="value.valid.value.isEnabled"
+                      :content="value.valid.value.reason"
+                      placement="right"
+                      popper-class="g-tooltip-with-newline"
+                    >
+                      {{ value.comment.value }}
+                    </el-tooltip>
+                  </el-option>
+                </template>
+              </template>
+              <!-- 其他枚举类型参数正常显示 -->
+              <template v-else>
+                <el-option
+                  v-for="[key, value] in Object.entries(refParameter.values.value)"
+                  :key="key"
+                  :value="key"
+                  :label="value.comment.value"
+                  :disabled="!value.valid.value.isEnabled"
                 >
-                  {{ value.comment.value }}
-                </el-tooltip>
-              </el-option>
+                  <el-tooltip
+                    :disabled="value.valid.value.isEnabled"
+                    :content="value.valid.value.reason"
+                    placement="right"
+                    popper-class="g-tooltip-with-newline"
+                  >
+                    {{ value.comment.value }}
+                  </el-tooltip>
+                </el-option>
+              </template>
             </el-select>
             <LazyInputNumber
               v-else-if="isNumberParameter(refParameter.parameter.value)"
