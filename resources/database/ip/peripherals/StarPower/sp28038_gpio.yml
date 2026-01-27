@@ -75,6 +75,116 @@ parameters:
     visible: true
     readonly: false
   
+  # 3. 驱动强度
+  gpio_drive_strength_t:
+    type: enum
+    values:
+      low:
+        comment:
+          zh-cn: 低驱动强度
+          en: Low drive strength
+      high:
+        comment:
+          zh-cn: 高驱动强度
+          en: High drive strength
+    default: low
+    display:
+      zh-cn: 驱动强度
+      en: Drive Strength
+    description:
+      zh-cn: 设置GPIO驱动强度
+      en: Set GPIO drive strength
+    visible: true
+    readonly: false
+  
+  # 4. 转换率
+  gpio_slew_rate_t:
+    type: enum
+    values:
+      low:
+        comment:
+          zh-cn: 低转换率
+          en: Low slew rate
+      high:
+        comment:
+          zh-cn: 高转换率
+          en: High slew rate
+    default: low
+    display:
+      zh-cn: 转换率
+      en: Slew Rate
+    description:
+      zh-cn: 设置GPIO转换率
+      en: Set GPIO slew rate
+    visible: true
+    readonly: false
+  
+  # 5. 输入施密特触发器
+  gpio_current_source_t:
+    type: enum
+    values:
+      "false":
+        comment:
+          zh-cn: 禁用
+          en: Disable
+      "true":
+        comment:
+          zh-cn: 启用
+          en: Enable
+    default: "false"
+    display:
+      zh-cn: 输入施密特触发器
+      en: Input Schmidt Trigger
+    description:
+      zh-cn: 启用/禁用输入施密特触发器
+      en: Enable/disable input Schmidt trigger
+    visible: true
+    readonly: false
+  
+  # 6. 开源输出
+  gpio_open_source_t:
+    type: enum
+    values:
+      "false":
+        comment:
+          zh-cn: 禁用
+          en: Disable
+      "true":
+        comment:
+          zh-cn: 启用
+          en: Enable
+    default: "false"
+    display:
+      zh-cn: 开源输出
+      en: Open Source Output
+    description:
+      zh-cn: 启用/禁用开源输出
+      en: Enable/disable open source output
+    visible: true
+    readonly: false
+  
+  # 7. 输入使能
+  gpio_input_enable_t:
+    type: enum
+    values:
+      "false":
+        comment:
+          zh-cn: 禁用
+          en: Disable
+      "true":
+        comment:
+          zh-cn: 启用
+          en: Enable
+    default: "true"
+    display:
+      zh-cn: 输入使能
+      en: Input Enable
+    description:
+      zh-cn: 启用/禁用输入功能
+      en: Enable/disable input function
+    visible: true
+    readonly: false
+  
   # 3. GPIO_setQualificationMode() 相关参数
   gpio_qualification_mode_t:
     type: enum
@@ -110,11 +220,21 @@ presets:
     refParameters:
       gpio_direction_t: {}
       gpio_pin_type_t: {}
+      gpio_drive_strength_t: {}
+      gpio_slew_rate_t: {}
+      gpio_current_source_t: {}
+      gpio_open_source_t: {}
+      gpio_input_enable_t: {}
       gpio_qualification_mode_t: {}
   Output:
     refParameters:
       gpio_direction_t: {}
       gpio_pin_type_t: {}
+      gpio_drive_strength_t: {}
+      gpio_slew_rate_t: {}
+      gpio_current_source_t: {}
+      gpio_open_source_t: {}
+      gpio_input_enable_t: {}
       gpio_qualification_mode_t: {}
 
 containers:
@@ -122,6 +242,11 @@ containers:
     refParameters:
       gpio_direction_t: {}
       gpio_pin_type_t: {}
+      gpio_drive_strength_t: {}
+      gpio_slew_rate_t: {}
+      gpio_current_source_t: {}
+      gpio_open_source_t: {}
+      gpio_input_enable_t: {}
       gpio_qualification_mode_t: {}
 
 activated: not is_empty(configs.GPIO)
