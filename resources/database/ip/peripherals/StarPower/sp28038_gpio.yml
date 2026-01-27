@@ -104,55 +104,6 @@ parameters:
       en: Set input signal qualification mode
     visible: true
     readonly: false
-  
-  # 4. GPIO_configureDigitalFilters() 相关参数
-  gpio_filter_clock_source_t:
-    type: enum
-    values:
-      bus_clock:
-        comment:
-          zh-cn: 总线时钟
-          en: BUS CLOCK
-      lpo_clock:
-        comment:
-          zh-cn: LPO时钟
-          en: LPO CLOCK
-    default: bus_clock
-    display:
-      zh-cn: 滤波时钟源
-      en: Filter Clock Source
-    description:
-      zh-cn: 配置数字滤波器时钟源
-      en: Configure digital filter clock source
-    visible: true
-    readonly: false
-  
-  gpio_filter_length_t:
-    type: integer
-    min: 0
-    max: 31
-    default: 0
-    display:
-      zh-cn: 滤波长度
-      en: Filter Length
-    description:
-      zh-cn: 配置数字滤波器长度
-      en: Configure digital filter length
-    visible: true
-    readonly: false
-  
-  # 5. GPIO_lockPortConfig() 相关参数
-  gpio_lock_port_t:
-    type: boolean
-    default: false
-    display:
-      zh-cn: 锁定端口配置
-      en: Lock Port Configuration
-    description:
-      zh-cn: 锁定端口配置
-      en: Lock port configuration
-    visible: true
-    readonly: false
 
 presets:
   Input:
@@ -160,17 +111,11 @@ presets:
       gpio_direction_t: {}
       gpio_pin_type_t: {}
       gpio_qualification_mode_t: {}
-      gpio_filter_clock_source_t: {}
-      gpio_filter_length_t: {}
-      gpio_lock_port_t: {}
   Output:
     refParameters:
       gpio_direction_t: {}
       gpio_pin_type_t: {}
       gpio_qualification_mode_t: {}
-      gpio_filter_clock_source_t: {}
-      gpio_filter_length_t: {}
-      gpio_lock_port_t: {}
 
 containers:
   overview:
@@ -178,8 +123,5 @@ containers:
       gpio_direction_t: {}
       gpio_pin_type_t: {}
       gpio_qualification_mode_t: {}
-      gpio_filter_clock_source_t: {}
-      gpio_filter_length_t: {}
-      gpio_lock_port_t: {}
 
 activated: not is_empty(configs.GPIO)

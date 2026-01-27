@@ -218,16 +218,6 @@ onBeforeUnmount(() => {
         </template>
       </el-table-column>
       <el-table-column
-        :label="$t('pin.locked')"
-        :sortable="true"
-        :show-overflow-tooltip="true"
-        :min-width="50"
-      >
-        <template #default="{ row }: { row: ModelType }">
-          {{ row.pin!.locked ? '✔' : '✘' }}
-        </template>
-      </el-table-column>
-      <el-table-column
         :label="$t('pin.label')"
         :sortable="true"
         :show-overflow-tooltip="true"
