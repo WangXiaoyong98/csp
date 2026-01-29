@@ -72,10 +72,35 @@ class ProjectUtils:
         if succeed:
             p = Project(project)
             index = Package().index()
-            hal_folder = index.path("hal", p.gen.hal, p.gen.halVersion)
+            
+            # 如果halVersion为空字符串，尝试使用"latest"版本号
+            hal_version = p.gen.halVersion
+            if not hal_version:
+                hal_versions = index.versions("hal", p.gen.hal)
+                if hal_versions:
+                    # 尝试使用"latest"版本，如果不存在则使用第一个版本
+                    if "latest" in hal_versions:
+                        hal_version = "latest"
+                    else:
+                        hal_version = hal_versions[0]
+            
+            hal_folder = index.path("hal", p.gen.hal, hal_version)
+            
+            # 如果toolchainsVersion为空字符串，尝试使用"latest"版本号
+            toolchains_version = p.gen.toolchainsVersion
+            if not toolchains_version:
+                toolchains_versions = index.versions("toolchains", p.gen.toolchains)
+                if toolchains_versions:
+                    # 尝试使用"latest"版本，如果不存在则使用第一个版本
+                    if "latest" in toolchains_versions:
+                        toolchains_version = "latest"
+                    else:
+                        toolchains_version = toolchains_versions[0]
+            
             toolchains_folder = index.path(
-                "toolchains", p.gen.toolchains, p.gen.toolchainsVersion
+                "toolchains", p.gen.toolchains, toolchains_version
             )
+            
             user_data = {
                 "hal_folder": hal_folder,
                 "toolchains_folder": toolchains_folder,
