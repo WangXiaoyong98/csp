@@ -31,6 +31,8 @@ import type { Buffer } from 'node:buffer'
 import { spawn } from 'node:child_process'
 import axios from 'axios'
 import { app } from 'electron'
+import * as path from 'node:path'
+import * as fs from 'node:fs'
 import { processArgs } from './args'
 import { getServerFolder } from './settings'
 
@@ -74,31 +76,67 @@ export function createServer(): Promise<string> {
     }
 
     try {
-      const process = spawn('csp-server.exe', ['serve', '-p', '55432'], {
-        cwd: getServerFolder(),
-      })
+      const serverFolder = getServerFolder()
+      const exePath = path.join(serverFolder, 'csp-server.exe')
+      const pyPath = path.join(serverFolder, 'csp-server.py')
+
+      console.log('Server folder:', serverFolder)
+      console.log('Checking for csp-server.exe:', fs.existsSync(exePath))
+      console.log('Checking for csp-server.py:', fs.existsSync(pyPath))
+
+      let process
+      let commandUsed
+      
+      if (fs.existsSync(exePath)) {
+        console.log('Using csp-server.exe')
+        commandUsed = 'csp-server.exe'
+        process = spawn('csp-server.exe', ['serve', '-p', '55432'], {
+          cwd: serverFolder,
+        })
+      } else if (fs.existsSync(pyPath)) {
+        console.log('Using csp-server.py with python')
+        commandUsed = 'python csp-server.py'
+        process = spawn('python', ['csp-server.py', 'serve', '-p', '55432'], {
+          cwd: serverFolder,
+        })
+      } else {
+        const errorMsg = 'Neither csp-server.exe nor csp-server.py found'
+        console.error(errorMsg)
+        console.error('Files in server folder:', fs.readdirSync(serverFolder))
+        reject(new Error(errorMsg))
+        return
+      }
 
       let resolved = false
 
       const timeout = setTimeout(() => {
         if (!resolved) {
           resolved = true
-          reject(new Error('Server startup timeout after 5s'))
+          const errorMsg = `Server startup timeout after 5s using ${commandUsed}`
+          console.error(errorMsg)
           process.kill()
+          reject(new Error(errorMsg))
         }
       }, 5000)
 
-      process.stderr!.once('data', async (data: Buffer) => {
+      process.stdout!.on('data', (data: Buffer) => {
+        console.log('Server stdout:', data.toString())
+      })
+
+      process.stderr!.on('data', (data: Buffer) => {
         const text = data.toString()
+        console.log('Server stderr:', text)
         const match = text.match(/http:\/\/127\.0\.0\.1:(\d+)/)
         if (match) {
           const url = match[0]
           resolved = true
           clearTimeout(timeout)
+          console.log('Server started successfully at:', url)
           /* !< 延时 1s 等待服务端真正启动 */
-          await new Promise(r => setTimeout(r, 1000))
-          clientOnline(url)
-          resolve(url)
+          setTimeout(() => {
+            clientOnline(url)
+            resolve(url)
+          }, 1000)
         }
       })
 
@@ -106,7 +144,9 @@ export function createServer(): Promise<string> {
         if (!resolved) {
           resolved = true
           clearTimeout(timeout)
-          reject(err)
+          const errorMsg = `Failed to spawn server process: ${err.message}`
+          console.error(errorMsg)
+          reject(new Error(errorMsg))
         }
       })
 
@@ -114,12 +154,16 @@ export function createServer(): Promise<string> {
         if (!resolved) {
           resolved = true
           clearTimeout(timeout)
-          reject(new Error(`Server exited with code ${code}`))
+          const errorMsg = `Server exited with code ${code} using ${commandUsed}`
+          console.error(errorMsg)
+          reject(new Error(errorMsg))
         }
       })
     }
     catch (error) {
-      reject(error)
+      const errorMsg = `Error in createServer: ${error instanceof Error ? error.message : String(error)}`
+      console.error(errorMsg)
+      reject(new Error(errorMsg))
     }
   })
 }

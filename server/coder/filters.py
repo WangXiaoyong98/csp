@@ -29,6 +29,79 @@ def _do_hex(value: int, length: int = 8) -> str:
     return f"0x{int(value):0{length}X}"
 
 
+def _pin_channels(project):
+    if not hasattr(project, 'configs'):
+        return []
+    
+    configs = project.configs
+    if not hasattr(configs, 'get'):
+        return []
+    
+    pinmux = configs.get("pinmux", {})
+    if not pinmux:
+        return []
+    
+    return list(pinmux.keys())
+
+
+def _pin_function(project, channel):
+    if not hasattr(project, 'configs'):
+        return None
+    
+    configs = project.configs
+    if not hasattr(configs, 'get'):
+        return None
+    
+    pinmux = configs.get("pinmux", {})
+    if not pinmux:
+        return None
+    
+    return pinmux.get(channel)
+
+
+def _gpio_used_channels(project):
+    if not hasattr(project, 'configs'):
+        return []
+    
+    configs = project.configs
+    if not hasattr(configs, 'get'):
+        return []
+    
+    pinmux = configs.get("pinmux", {})
+    if not pinmux:
+        return []
+    
+    used_channels = []
+    for channel, function in pinmux.items():
+        if function and function.startswith("GPIO:"):
+            used_channels.append(channel)
+    
+    return used_channels
+
+
+def _gpio_channel_alias(project, channel):
+    if not hasattr(project, 'configs'):
+        return channel
+    
+    configs = project.configs
+    if not hasattr(configs, 'get'):
+        return channel
+    
+    gpio = configs.get("gpio", {})
+    if not gpio:
+        return channel
+    
+    aliases = gpio.get("aliases", {})
+    if not aliases:
+        return channel
+    
+    return aliases.get(channel, channel)
+
+
 FILTERS = {
     "hex": _do_hex,
+    "pin_channels": _pin_channels,
+    "pin_function": _pin_function,
+    "gpio_used_channels": _gpio_used_channels,
+    "gpio_channel_alias": _gpio_channel_alias,
 }

@@ -50,7 +50,12 @@ class Contributors:
         url = f"https://api.github.com/repos/{owner}/{repo}/contributors"
         headers = {"Authorization": f"token {token}"}
         resp = requests.get(url, headers=headers)
-        assert resp.status_code == 200, "get contributors failed"
+        
+        if resp.status_code != 200:
+            print(f"Warning: Failed to get contributors from GitHub API (status code: {resp.status_code})")
+            print(f"Using default contributors list")
+            return []
+        
         json = resp.json()
         names = []
         for info in json:
