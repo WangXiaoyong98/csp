@@ -58,11 +58,22 @@ class Coder:
             "generate": Signal("generate"),
         }
 
-        hal = self._project.gen.hal
-        halVersion = self._project.gen.halVersion
+        self._hal = self._project.gen.hal
+        self._halVersion = self._project.gen.halVersion
         hal_folder = Path(self._project.hal_folder())
 
-        self._package_name = f"{hal}_{halVersion}_generator"
+        # 如果halVersion为空字符串，尝试使用"latest"版本号
+        if not self._halVersion:
+            from packages import Package
+            index = Package().index()
+            hal_versions = index.versions("hal", self._hal)
+            if hal_versions:
+                if "latest" in hal_versions:
+                    self._halVersion = "latest"
+                else:
+                    self._halVersion = hal_versions[0]
+
+        self._package_name = f"{self._hal}_{self._halVersion}_generator"
         self._filters_package_name = f"{self._package_name}.filters"
         self._generator_folder = hal_folder / "tools" / "generator"
         self._filters_folder = self._generator_folder / "filters"
@@ -209,7 +220,7 @@ class Coder:
     def _check_hal_folder(self) -> bool:
         if not os.path.isdir(self._project.hal_folder()):
             logger.error(
-                f"the package({self._project.gen.hal}@{self._project.gen.halVersion!r}) is not installed."
+                f"the package({self._hal}@{self._halVersion!r}) is not installed."
             )
             return False
 
@@ -218,7 +229,7 @@ class Coder:
             f"{self._project.hal_folder()}/tools/generator/generator.py"
         ):
             logger.error(
-                f"{generator_file} is not exists! maybe package({self._project.gen.hal}) not yet installed."
+                f"{generator_file} is not exists! maybe package({self._hal}) not yet installed."
             )
             return False
         return True

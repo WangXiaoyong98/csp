@@ -23,3 +23,9 @@
 # ------------   ----------   -----------------------------------------------
 # 2025-07-07     xqyjlj       initial version
 #
+
+from .package import Package
+from .index import PackageIndex
+from .description import PackageDescription
+
+__all__ = ['Package', 'PackageIndex', 'PackageDescription']

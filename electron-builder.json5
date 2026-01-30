@@ -52,8 +52,8 @@
     ],
     "extraFiles": [
       {
-        "from": "build-server/csp-server.exe",
-        "to": "resources/server/csp-server.exe",
+        "from": "build-server/csp-server.dist",
+        "to": "resources/server",
         "filter": ["**/*"]
       }
     ],
