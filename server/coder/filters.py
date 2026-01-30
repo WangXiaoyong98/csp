@@ -37,11 +37,11 @@ def _pin_channels(project):
     if not hasattr(configs, 'get'):
         return []
     
-    pinmux = configs.get("pinmux", {})
-    if not pinmux:
+    pins = configs.get("pins", {})
+    if not pins:
         return []
     
-    return list(pinmux.keys())
+    return list(pins.keys())
 
 
 def _pin_function(project, channel):
@@ -52,11 +52,15 @@ def _pin_function(project, channel):
     if not hasattr(configs, 'get'):
         return None
     
-    pinmux = configs.get("pinmux", {})
-    if not pinmux:
+    pins = configs.get("pins", {})
+    if not pins:
         return None
     
-    return pinmux.get(channel)
+    pin_config = pins.get(channel, {})
+    if not pin_config:
+        return None
+    
+    return pin_config.get('function', None)
 
 
 def _gpio_used_channels(project):
